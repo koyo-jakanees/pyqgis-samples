@@ -15,10 +15,12 @@ character_widget.show()
 print(character_widget.setCharacter('Z'))
 print(character_widget.sizeHint())
 
-print(character_widget.getColumns())
-print(character_widget.updateColumns(6))
+print(character_widget.columns())
+print(character_widget.setColumns(6))
 
-print(character_widget.getSquareSize())
-print(character_widget.updateFont(QFont('Verdana')))
-print(character_widget.updateSize(32))
-print(character_widget.updateStyle('Bold'))
+print(character_widget.squareSize())
+print(character_widget.setFont(QFont('Verdana')))
+print(character_widget.setFontSize(32))
+print(character_widget.setFontStyle('Bold'))
+
+
