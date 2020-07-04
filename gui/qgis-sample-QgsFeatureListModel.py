@@ -1,5 +1,5 @@
 # coding: utf-8
-from PyQt4.QtGui import QDialog
+from qgis.PyQt.QtWidgets import QDialog
 from qgis.core import QgsVectorLayerCache
 from qgis.gui import (QgsAttributeTableFilterModel, QgsAttributeTableModel,
                       QgsFeatureListModel, QgsFeatureListView,

@@ -1,5 +1,6 @@
 # coding: utf-8
-from PyQt4.QtCore import Qt
+from __future__ import print_function
+from qgis.PyQt.QtCore import Qt
 from qgis.gui import QgsMapTool
 from qgis.utils import iface
 
@@ -18,7 +19,8 @@ class SendPointToolCoordinates(QgsMapTool):
     def canvasReleaseEvent(self, event):
         point = self.toLayerCoordinates(self.layer, event.pos())
 
-        print(point.x(), point.y())
+        # fix_print_with_import
+        print((point.x(), point.y()))
 
 layer, canvas = iface.activeLayer(), iface.mapCanvas()
 

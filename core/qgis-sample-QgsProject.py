@@ -1,5 +1,6 @@
 # coding: utf-8
-from PyQt4.QtCore import QFileInfo
+from __future__ import print_function
+from qgis.PyQt.QtCore import QFileInfo
 from qgis.core import QgsProject
 from qgis.utils import iface
 

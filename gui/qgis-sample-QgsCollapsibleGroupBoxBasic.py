@@ -1,7 +1,6 @@
 # coding: utf-8
-from PyQt4.QtCore import QRect
-from PyQt4.QtGui import (QDialog, QFrame, QLineEdit, QScrollArea,
-                         QSizePolicy, QVBoxLayout, QWidget)
+from qgis.PyQt.QtCore import QRect
+from qgis.PyQt.QtWidgets import QDialog, QFrame, QLineEdit, QScrollArea, QSizePolicy, QVBoxLayout, QWidget
 from qgis.gui import QgsCollapsibleGroupBoxBasic
 
 new_dialog = QDialog()

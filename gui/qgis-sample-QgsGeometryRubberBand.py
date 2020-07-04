@@ -1,6 +1,6 @@
 # coding: utf-8
-from PyQt4.QtCore import Qt
-from PyQt4.QtGui import QColor
+from qgis.PyQt.QtCore import Qt
+from qgis.PyQt.QtGui import QColor
 from qgis.core import QGis, QgsPointV2, QgsLineStringV2, QgsPolygonV2
 from qgis.gui import QgsGeometryRubberBand
 from qgis.utils import iface

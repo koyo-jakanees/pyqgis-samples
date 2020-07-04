@@ -1,5 +1,6 @@
 # coding: utf-8
-from PyQt4.QtCore import QSettings
+from __future__ import print_function
+from qgis.PyQt.QtCore import QSettings
 from qgis.core import QgsApplication
 from qgis.gui import QgsSVGFillSymbolLayerWidget
 from qgis.utils import iface

@@ -1,4 +1,5 @@
 # coding: utf-8
+from __future__ import print_function
 from qgis.core import QgsExpressionContextUtils, QgsExpressionContext
 from qgis.gui import QgsVariableEditorWidget
 from qgis.utils import iface

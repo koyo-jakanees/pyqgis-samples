@@ -3,11 +3,11 @@
 this class documentation samples at
 http://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/communicating.html.
 """
+from builtins import range
 
 import time
-from PyQt4.QtCore import Qt
-from PyQt4.QtGui import (QProgressBar, QPushButton, QDialog,
-                         QSizePolicy, QGridLayout, QDialogButtonBox)
+from qgis.PyQt.QtCore import Qt
+from qgis.PyQt.QtWidgets import QProgressBar, QPushButton, QDialog, QSizePolicy, QGridLayout, QDialogButtonBox
 from qgis.utils import iface
 from qgis.gui import QgsMessageBar
 

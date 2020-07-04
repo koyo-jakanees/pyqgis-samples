@@ -1,0 +1,1299 @@
+/home/geopro/.local/bin/qgis2to3 -w /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0
+RefactoringTool: Skipping optional fixer: idioms
+RefactoringTool: Skipping optional fixer: ws_comma
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsError.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsJSONUtils.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsNetworkAccessManager.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsProject.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorFileWriter.py
+RefactoringTool: Can't parse /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorLayer.py: ParseError: bad input: type=3, value='"resultats-definitifs-consultation-26-juin-2016"', context=(' ', (14, 7))
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorLayerCache.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorLayerEditUtils.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-CharacterWidget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsActionMenu.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAdvancedDigitizingDockWidget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeForm.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableFilterModel.py
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsError.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsError.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
++from qgis.PyQt.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
+ from qgis.core import QgsError
+ from qgis.gui import QgsErrorDialog
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsJSONUtils.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsJSONUtils.py	(refactored)
+@@ -1,7 +1,8 @@
+ # coding: utf-8
++from __future__ import print_function
+ import codecs
+ import os
+-from PyQt4.QtCore import QTextCodec, QVariant
++from qgis.PyQt.QtCore import QTextCodec, QVariant
+ from qgis.core import (QgsApplication, QgsFeature, QgsField, QgsFields,
+                        QgsGeometry, QgsJSONUtils, QgsPoint)
+ from qgis.utils import iface
+@@ -48,7 +49,8 @@
+ )
+ 
+ for f in fields:
+-    print(f.name(), f.type())
++    # fix_print_with_import
++    print((f.name(), f.type()))
+ 
+ # Attempts to parse a GeoJSON string to a collection of features.
+ features = QgsJSONUtils.stringToFeatureList(
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsNetworkAccessManager.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsNetworkAccessManager.py	(refactored)
+@@ -1,6 +1,7 @@
+ # coding:utf-8
+-from PyQt4.QtCore import QUrl
+-from PyQt4.QtNetwork import QNetworkRequest
++from __future__ import print_function
++from qgis.PyQt.QtCore import QUrl
++from qgis.PyQt.QtNetwork import QNetworkRequest
+ from qgis.core import QgsNetworkAccessManager
+ 
+ url = 'http://qgis.org/en/site/'
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsProject.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsProject.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QFileInfo
++from __future__ import print_function
++from qgis.PyQt.QtCore import QFileInfo
+ from qgis.core import QgsProject
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorFileWriter.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorFileWriter.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QVariant
++from __future__ import print_function
++from qgis.PyQt.QtCore import QVariant
+ from qgis.core import (QgsFeature, QgsField, QgsFields,
+                        QgsGeometry, QgsPoint, QgsVectorFileWriter)
+ from qgis.utils import QGis, iface
+@@ -37,7 +38,8 @@
+                              QGis.WKBPoint, None, "ESRI Shapefile")
+ 
+ if writer.hasError() != QgsVectorFileWriter.NoError:
+-    print("Error when creating shapefile: ", writer.errorMessage())
++    # fix_print_with_import
++    print(("Error when creating shapefile: ", writer.errorMessage()))
+ 
+ # Add a feature
+ fet = QgsFeature()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorLayerCache.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorLayerCache.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog, QTableView
++from qgis.PyQt.QtWidgets import QDialog, QTableView
+ from qgis.core import QgsVectorLayerCache
+ from qgis.gui import (QgsAttributeTableModel,
+                       QgsAttributeTableView,
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorLayerEditUtils.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorLayerEditUtils.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QVariant
++from qgis.PyQt.QtCore import QVariant
+ from qgis.core import (QgsFeature,
+                        QgsField, QgsGeometry,
+                        QgsMapLayerRegistry,
+@@ -42,7 +42,7 @@
+ 
+ QgsMapLayerRegistry.instance().addMapLayer(vl)
+ 
+-feat = vl.getFeatures().next()
++feat = next(vl.getFeatures())
+ canvas = iface.mapCanvas()
+ 
+ vector_layer_edit_utils = QgsVectorLayerEditUtils(vl)
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-CharacterWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-CharacterWidget.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QFont
++from __future__ import print_function
++from qgis.PyQt.QtGui import QFont
+ from qgis.gui import CharacterWidget
+ 
+ character_widget = CharacterWidget()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsActionMenu.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsActionMenu.py	(refactored)
+@@ -1,11 +1,12 @@
+ # coding: utf-8
++from __future__ import print_function
+ from qgis.gui import QgsActionMenu
+ from qgis.utils import iface
+ 
+ layer = iface.activeLayer()
+ if iface.activeLayer().actions().size() > 0:
+     features = layer.dataProvider().getFeatures()
+-    feat1 = features.next()
++    feat1 = next(features)
+     action_menu = QgsActionMenu(
+         layer,
+         feat1
+@@ -14,7 +15,7 @@
+ 
+     action_menu.show()
+     print(action_menu.actions())
+-    feat2 = features.next()
++    feat2 = next(features)
+     action_menu.setFeature(feat2)
+     print(feat2.id())
+ else:
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAdvancedDigitizingDockWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAdvancedDigitizingDockWidget.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt
++from __future__ import print_function
++from qgis.PyQt.QtCore import Qt
+ from qgis.gui import QgsAdvancedDigitizingDockWidget
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeDialog.py	(refactored)
+@@ -4,7 +4,7 @@
+ 
+ map_canvas = iface.mapCanvas()
+ layer = map_canvas.currentLayer()
+-feature = layer.getFeatures().next()
++feature = next(layer.getFeatures())
+ attribute_dialog = QgsAttributeDialog(layer, feature, True)
+ attribute_dialog.show()
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeForm.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeForm.py	(refactored)
+@@ -3,7 +3,7 @@
+ from qgis.utils import iface
+ 
+ layer = iface.activeLayer()
+-attribute_form = QgsAttributeForm(layer, layer.getFeatures().next())
++attribute_form = QgsAttributeForm(layer, next(layer.getFeatures()))
+ attribute_form.setMode(QgsAttributeForm.SingleEditMode)  # SingleEditMode, AddFeatureMode, MultiEditMode, SearchMode
+ 
+ attribute_form.show()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableFilterModel.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableFilterModel.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QTableView
++from qgis.PyQt.QtWidgets import QTableView
+ from qgis.core import QgsVectorLayerCache
+ from qgis.gui import (QgsAttributeTableModel,
+                       QgsAttributeTableView,
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableModel.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableModel.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QTableView
++from qgis.PyQt.QtWidgets import QTableViewRefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableModel.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableView.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertInfo.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertInfoDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertTrustPolicyComboBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthSslErrorsDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBlendModeComboBox-custom-signal.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBlendModeComboBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBrushStyleComboBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBusyIndicatorDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCharacterSelectorDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCollapsibleGroupBox.py
+
+ from qgis.core import QgsVectorLayerCache
+ from qgis.gui import (QgsAttributeTableModel,
+                       QgsAttributeTableView,
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableView.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableView.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QTableView
++from qgis.PyQt.QtWidgets import QTableView
+ from qgis.core import QgsVectorLayerCache
+ from qgis.gui import (QgsAttributeTableModel,
+                       QgsAttributeTableView,
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertInfo.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertInfo.py	(refactored)
+@@ -1,6 +1,8 @@
++from future import standard_library
++standard_library.install_aliases()
+ # coding: utf-8
+-import urllib
+-from PyQt4.QtNetwork import QSslCertificate
++import urllib.request, urllib.parse, urllib.error
++from qgis.PyQt.QtNetwork import QSslCertificate
+ from qgis.gui import QgsAuthCertInfo
+ 
+ # Certificate for test from http://fm4dd.com/openssl/certexamples.htm
+@@ -10,7 +12,7 @@
+ pem_path = remote_url.split('/')[-1]
+ # Fetch certificate from remote url and write to file
+ with open(pem_path, 'wb') as f:
+-    certificate_string = urllib.urlopen(remote_url).read()
++    certificate_string = urllib.request.urlopen(remote_url).read()
+     f.write(certificate_string)
+ 
+ # Instanciate a QgsAuthCertInfo using QSslCertificate.fromPath
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertInfoDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertInfoDialog.py	(refactored)
+@@ -1,7 +1,10 @@
+ # coding: utf-8
+-import urllib
+-from PyQt4.QtCore import QByteArray
+-from PyQt4.QtNetwork import QSslCertificate
++from __future__ import print_function
++from future import standard_library
++standard_library.install_aliases()
++import urllib.request, urllib.parse, urllib.error
++from qgis.PyQt.QtCore import QByteArray
++from qgis.PyQt.QtNetwork import QSslCertificate
+ from qgis.gui import QgsAuthCertInfoDialog
+ 
+ # Certificate for test from http://fm4dd.com/openssl/certexamples.htm
+@@ -11,7 +14,7 @@
+ pem_path = remote_url.split('/')[-1]
+ # Fetch certificate from remote url and write to file
+ with open(pem_path, 'wb') as f:
+-    certificate_string = urllib.urlopen(remote_url).read()
++    certificate_string = urllib.request.urlopen(remote_url).read()
+     f.write(certificate_string)
+ 
+ # Instanciate a first QgsAuthCertInfoDialog using QSslCertificate.fromPath
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertTrustPolicyComboBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertTrustPolicyComboBox.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from __future__ import print_function
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.gui import QgsAuthCertTrustPolicyComboBox
+ 
+ new_dialog = QDialog()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthSslErrorsDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthSslErrorsDialog.py	(refactored)
+@@ -1,6 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QUrl
+-from PyQt4.QtNetwork import QNetworkRequest, QSslError
++from qgis.PyQt.QtCore import QUrl
++from qgis.PyQt.QtNetwork import QNetworkRequest
+ from qgis.core import QgsNetworkAccessManager
+ from qgis.gui import QgsAuthSslErrorsDialog
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBlendModeComboBox-custom-signal.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBlendModeComboBox-custom-signal.py	(refactored)
+@@ -1,6 +1,7 @@
++from __future__ import print_function
+ # Make your own signal
+-from PyQt4.QtCore import pyqtSignal
+-from PyQt4.QtGui import QDialog
++from qgis.PyQt.QtCore import pyqtSignal
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.gui import QgsBlendModeComboBox
+ 
+ new_dialog = QDialog()
+@@ -59,7 +60,8 @@
+ 
+ def print_blend_mode(index):
+     # See enum QPainter.CompositionMode for correspondance
+-    print enum_composition_mode[index]
++    # fix_print_with_import
++    print(enum_composition_mode[index])
+ 
+ # Custom signal from QgsBlendModeComboBoxWithCustomSignal
+ blend_mode_combo_box.onBlendChanged.connect(print_blend_mode)
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBlendModeComboBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBlendModeComboBox.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from __future__ import print_function
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.gui import QgsBlendModeComboBox
+ 
+ new_dialog = QDialog()
+@@ -46,8 +47,10 @@
+ 
+ def on_blend_mode_changed(index):
+     # See enum QPainter.CompositionMode for correspondance
+-    print blend_mode_combo_box.blendMode()
+-    print 'Qpainter.' + enum_composition_mode[blend_mode_combo_box.blendMode()]
++    # fix_print_with_import
++    print(blend_mode_combo_box.blendMode())
++    # fix_print_with_import
++    print('Qpainter.' + enum_composition_mode[blend_mode_combo_box.blendMode()])
+ 
+ # Signal inherited from QComboBox
+ blend_mode_combo_box.currentIndexChanged.connect(on_blend_mode_changed)
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBrushStyleComboBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBrushStyleComboBox.py	(refactored)
+@@ -1,6 +1,7 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt
+-from PyQt4.QtGui import QDialog
++from __future__ import print_function
++from qgis.PyQt.QtCore import Qt
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.gui import QgsBrushStyleComboBox
+ 
+ # We use the style available in brush styles.
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBusyIndicatorDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBusyIndicatorDialog.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt
++from qgis.PyQt.QtCore import Qt
+ from qgis.gui import QgsBusyIndicatorDialog
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCharacterSelectorDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCharacterSelectorDialog.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt
++from qgis.PyQt.QtCore import Qt
+ from qgis.gui import QgsCharacterSelectorDialog
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCollapsibleGroupBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCollapsibleGroupBox.py	(refactored)
+@@ -1,7 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QRect
+-from PyQt4.QtGui import (QDialog, QFrame, QLineEdit, QScrollArea,
+-                         QSizePolicy, QVBoxLayout, QWidget)
++from qgis.PyQt.QtCore import QRect
++from qgis.PyQt.QtWidgets import QDialog, QFrame, QLineEdit, QScrollArea, QSizePolicy, QVBoxLayout, QWidget
+ from qgis.gui import QgsCollapsibleGroupBox
+ 
+ new_dialog = QDialog()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCollapsibleGroupBoxBasic.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCollapsibleGroupBoxBasic.py	(refactored)
+@@ -1,7 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QRect
+-from PyQt4.QtGui import (QDialog, QFrame, QLineEdit, QScrollArea,
+-                         QSizePolicy, QVBoxLayout, QWidget)RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCollapsibleGroupBoxBasic.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorButton.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorButtonV2.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorDialogV2.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorPreviewWidget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorRampComboBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorRampWidget.py
+RefactoringTool: No changes to /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorSchemeList.py
+RefactoringTool: No changes to /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorSchemeModel.py
+RefactoringTool: No changes to /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorSwatchGrid.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorSwatchGridAction.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorWheel.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorWidget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCredentialDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsDashSpaceDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsDialog.py
+
++from qgis.PyQt.QtCore import QRect
++from qgis.PyQt.QtWidgets import QDialog, QFrame, QLineEdit, QScrollArea, QSizePolicy, QVBoxLayout, QWidget
+ from qgis.gui import QgsCollapsibleGroupBoxBasic
+ 
+ new_dialog = QDialog()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorBox.py	(refactored)
+@@ -1,6 +1,7 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt
+-from PyQt4.QtGui import QDialog, QDockWidget
++from __future__ import print_function
++from qgis.PyQt.QtCore import Qt
++from qgis.PyQt.QtWidgets import QDialog, QDockWidget
+ from qgis.gui import QgsColorBox, QgsColorWidget
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorButton.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorButton.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog, QVBoxLayout
++from qgis.PyQt.QtWidgets import QDialog, QVBoxLayout
+ from qgis.gui import QgsColorButton
+ 
+ # Create dialog and widget
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorButtonV2.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorButtonV2.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog, QVBoxLayout
++from qgis.PyQt.QtWidgets import QDialog, QVBoxLayout
+ from qgis.gui import QgsColorButtonV2
+ 
+ # Create dialog and widget
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorDialogV2.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorDialogV2.py	(refactored)
+@@ -1,6 +1,7 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
+-from PyQt4.QtGui import QColor  # http://doc.qt.io/qt-4.8/qcolor.html
++from __future__ import print_function
++from qgis.PyQt.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
++from qgis.PyQt.QtGui import QColor  # http://doc.qt.io/qt-4.8/qcolor.html
+ from qgis.gui import QgsColorDialogV2
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorPreviewWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorPreviewWidget.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QColor
++from __future__ import print_function
++from qgis.PyQt.QtGui import QColor
+ from qgis.gui import QgsColorPreviewWidget, QgsColorWidget
+ 
+ color_preview_widget = QgsColorPreviewWidget()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorRampComboBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorRampComboBox.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from __future__ import print_function
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.core import QgsStyleV2
+ from qgis.gui import QgsColorRampComboBox
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorRampWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorRampWidget.py	(refactored)
+@@ -1,4 +1,5 @@
+ # coding: utf-8
++from __future__ import print_function
+ from qgis.gui import QgsColorRampWidget, QgsColorWidget
+ 
+ color_ramp_widget = QgsColorRampWidget(
+@@ -10,12 +11,14 @@
+ 
+ color_ramp_widget.setInteriorMargin(5)
+ color_ramp_widget.setShowFrame(False)
++# fix_print_with_import
+ 
+-print(
++# fix_print_with_import
++print((
+     color_ramp_widget.color().red(),
+     color_ramp_widget.color().green(),
+     color_ramp_widget.color().blue()
+-)
++))
+ print(color_ramp_widget.component())
+ print(color_ramp_widget.componentValue())
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorSwatchGridAction.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorSwatchGridAction.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog, QMenu, QMenuBar, QVBoxLayout
++from qgis.PyQt.QtWidgets import QDialog, QMenu, QMenuBar, QVBoxLayout
+ from qgis.core import QgsColorSchemeRegistry, QgsCustomColorScheme
+ from qgis.gui import QgsColorSwatchGridAction
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorWheel.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorWheel.py	(refactored)
+@@ -1,4 +1,5 @@
+ # coding: utf-8
++from __future__ import print_function
+ from qgis.gui import QgsColorWheel
+ 
+ color_wheel = QgsColorWheel()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorWidget.py	(refactored)
+@@ -1,16 +1,19 @@
+ # coding: utf-8
++from __future__ import print_function
+ from qgis.gui import QgsColorWidget
+ 
+ color_widget = QgsColorWidget(
+     None,
+     QgsColorWidget.Multiple  # Can be Multiple, Red, Green, Blue, Hue, Saturation, Value, Alpha
+ )
++# fix_print_with_import
+ 
+-print(
++# fix_print_with_import
++print((
+     color_widget.color().red(),
+     color_widget.color().green(),
+     color_widget.color().blue()
+-)
++))
+ print(color_widget.component())
+ print(color_widget.componentValue())
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCredentialDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCredentialDialog.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
++from qgis.PyQt.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
+ from qgis.gui import QgsCredentialDialog
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsDashSpaceDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsDashSpaceDialog.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
++from qgis.PyQt.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
+ from qgis.gui import QgsDashSpaceDialog
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsDialog.py	(refactored)
+@@ -1,6 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
+-from PyQt4.QtGui import QDialogButtonBox  # http://doc.qt.io/qt-4.8/qcolor.html
++from qgis.PyQt.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
++from qgis.PyQt.QtWidgets import QDialogButtonBox  # http://doc.qt.io/qt-4.8/qcolor.html
+ from qgis.gui import QgsDialog
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsEditorWidgetRegistry.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsEditorWidgetRegistry.py	(refactored)
+@@ -1,16 +1,23 @@
+ # coding: utf-8
++from __future__ import print_function
+ from qgis.gui import QgsEditorWidgetRegistry
+ from qgis.utils import iface
+ 
+ editor_widget_registry_instance = QgsEditorWidgetRegistry.instance()
+ 
+-# List available widgets in Text edition in tab Fields of a vector layer
+-print editor_widget_registry_instance.factories()  # Return a list of QgsEditorWidgetFactory
+-print editor_widget_registry_instance.factories().keys()
++# List available widgets in Text edition in tab Fields of a vector layer# fix_print_with_importRefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsEditorWidgetRegistry.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsEffectDrawModeComboBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsErrorDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsExpressionBuilderWidget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsExtentGroupBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFeatureListModel.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFeatureListView.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFieldComboBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFileWidget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFilterLineEdit.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFormAnnotationItem.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsGeometryRubberBand.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsGroupWMSDataDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsHighlight.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsHtmlAnnotationItem.py
+RefactoringTool: No changes to /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsLayerPropertiesWidget.py
+
+ 
+-# Get QgsEditorWidgetFactory
+-print editor_widget_registry_instance.factory(u'Range')
+-print editor_widget_registry_instance.factory(u'RelationReference')
++# fix_print_with_import
++print(editor_widget_registry_instance.factories())  # Return a list of QgsEditorWidgetFactory
++# fix_print_with_import
++print(list(editor_widget_registry_instance.factories().keys()))
++
++# Get QgsEditorWidgetFactory# fix_print_with_import
++
++# fix_print_with_import
++print(editor_widget_registry_instance.factory(u'Range'))
++# fix_print_with_import
++print(editor_widget_registry_instance.factory(u'RelationReference'))
+ 
+ 
+ layer = iface.activeLayer()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsEffectDrawModeComboBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsEffectDrawModeComboBox.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from __future__ import print_function
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.core import QgsPaintEffect
+ from qgis.gui import QgsEffectDrawModeComboBox
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsErrorDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsErrorDialog.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
++from qgis.PyQt.QtCore import Qt  # http://doc.qt.io/qt-4.8/qwidget.html#windowFlags-prop
+ from qgis.core import QgsError
+ from qgis.gui import QgsErrorDialog
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsExpressionBuilderWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsExpressionBuilderWidget.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QWidget
++from qgis.PyQt.QtWidgets import QWidget
+ from qgis.gui import QgsExpressionBuilderWidget
+ 
+ w = QWidget()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsExtentGroupBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsExtentGroupBox.py	(refactored)
+@@ -1,16 +1,18 @@
+ # coding: utf-8
++from __future__ import print_function
+ from qgis.core import QgsCoordinateReferenceSystem
+ from qgis.gui import QgsExtentGroupBox
+ from qgis.utils import iface
+ 
+ canvas = iface.mapCanvas()
+ canvas_extent = canvas.extent()
+-print(
++# fix_print_with_import
++print((
+     canvas_extent.xMinimum(),
+     canvas_extent.xMaximum(),
+     canvas_extent.yMinimum(),
+     canvas_extent.yMaximum()
+-)
++))
+ 
+ extent_group_box = QgsExtentGroupBox()
+ extent_group_box.setOriginalExtent(
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFeatureListModel.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFeatureListModel.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.core import QgsVectorLayerCache
+ from qgis.gui import (QgsAttributeTableFilterModel, QgsAttributeTableModel,
+                       QgsFeatureListModel, QgsFeatureListView,
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFeatureListView.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFeatureListView.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.core import QgsVectorLayerCache
+ from qgis.gui import (QgsAttributeTableFilterModel, QgsAttributeTableModel,
+                       QgsFeatureListModel, QgsFeatureListView,
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFieldComboBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFieldComboBox.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog, QFormLayout
++from __future__ import print_function
++from qgis.PyQt.QtWidgets import QDialog, QFormLayout
+ from qgis.gui import (QgsFieldComboBox, QgsMapLayerComboBox,
+                       QgsMapLayerProxyModel)
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFileWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFileWidget.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.gui import QgsFileWidget
+ 
+ new_dialog = QDialog()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFilterLineEdit.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFilterLineEdit.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.gui import QgsFilterLineEdit
+ 
+ new_dialog = QDialog()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFormAnnotationItem.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFormAnnotationItem.py	(refactored)
+@@ -1,7 +1,7 @@
+ # coding: utf-8
+ from inspect import getsourcefile
+ import os
+-from PyQt4.QtCore import QPointF, QSizeF
++from qgis.PyQt.QtCore import QPointF, QSizeF
+ from qgis.core import QgsPoint
+ from qgis.gui import QgsFormAnnotationItem
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsGeometryRubberBand.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsGeometryRubberBand.py	(refactored)
+@@ -1,6 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt
+-from PyQt4.QtGui import QColor
++from qgis.PyQt.QtCore import Qt
++from qgis.PyQt.QtGui import QColor
+ from qgis.core import QGis, QgsPointV2, QgsLineStringV2, QgsPolygonV2
+ from qgis.gui import QgsGeometryRubberBand
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsGroupWMSDataDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsGroupWMSDataDialog.py	(refactored)
+@@ -1,4 +1,5 @@
+ # coding: utf-8
++from __future__ import print_function
+ from qgis.gui import QgsGroupWMSDataDialog
+ 
+ # Instanciate the dialog
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsHighlight.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsHighlight.py	(refactored)
+@@ -1,6 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QVariant
+-from PyQt4.QtGui import QColor
++from qgis.PyQt.QtCore import QVariant
++from qgis.PyQt.QtGui import QColor
+ from qgis.core import (QgsFeature, QgsField,
+                        QgsGeometry, QgsPoint,
+                        QgsMapLayerRegistry,
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsHtmlAnnotationItem.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsHtmlAnnotationItem.py	(refactored)
+@@ -1,6 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QSizeF
+-from PyQt4.QtGui import QColor
++from qgis.PyQt.QtCore import QSizeF
++from qgis.PyQt.QtGui import QColor
+ from qgis.core import QgsPoint
+ from qgis.gui import QgsHtmlAnnotationItem
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapCanvas.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapCanvas.py	(refactored)
+@@ -1,6 +1,6 @@
+ # coding: utf-8
+ # Minimalist sample. For further, look at the plugin DockableMirrorMap code
+-from PyQt4.QtGui import QDialog
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.core import QgsMapLayerRegistryRefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapCanvas.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapCanvasSnappingUtils.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapLayerComboBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapOverviewCanvas.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapTip.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapTool.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapUnitScaleDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMessageBar.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsOrderByDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenCapStyleComboBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenJoinStyleComboBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenStyleComboBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsProjectionSelector.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsQueryBuilder.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRasterLayerSaveAsDialog.py
+RefactoringTool: No changes to /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRendererRulePropsDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRendererV2Widget.py
+
+ from qgis.gui import QgsMapCanvas, QgsMapCanvasLayer
+ from qgis.utils import iface
+@@ -12,7 +12,7 @@
+ map_canvas.setMinimumSize(800, 600)
+ 
+ layers = QgsMapLayerRegistry.instance().mapLayers()
+-map_canvas_layer_list = [QgsMapCanvasLayer(l) for l in layers.values()]
++map_canvas_layer_list = [QgsMapCanvasLayer(l) for l in list(layers.values())]
+ map_canvas.setLayerSet(map_canvas_layer_list)
+ map_canvas.setExtent(iface.mapCanvas().extent())
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapCanvasSnappingUtils.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapCanvasSnappingUtils.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+ 
++from __future__ import print_function
+ from qgis.core import QgsSnappingUtils
+ from qgis.gui import QgsMapCanvasSnappingUtils
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapLayerComboBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapLayerComboBox.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog, QFormLayout
++from __future__ import print_function
++from qgis.PyQt.QtWidgets import QDialog, QFormLayout
+ from qgis.gui import (QgsFieldComboBox, QgsMapLayerComboBox,
+                       QgsMapLayerProxyModel)
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapOverviewCanvas.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapOverviewCanvas.py	(refactored)
+@@ -1,6 +1,7 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt, QObject
+-from PyQt4.QtGui import QColor, QVBoxLayout, QDockWidget
++from qgis.PyQt.QtCore import Qt, QObject
++from qgis.PyQt.QtGui import QColor
++from qgis.PyQt.QtWidgets import QVBoxLayout, QDockWidget
+ from qgis.gui import QgsMapOverviewCanvas
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapTip.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapTip.py	(refactored)
+@@ -1,11 +1,13 @@
++from __future__ import print_function
++from builtins import object
+ # coding: utf-8
+-from PyQt4.QtCore import QTimer
++from qgis.PyQt.QtCore import QTimer
+ from qgis.core import QgsPoint
+ from qgis.gui import QgsMapTip
+ from qgis.utils import iface
+ 
+ 
+-class ToolTip:
++class ToolTip(object):
+     def __init__(self, canvas, layer=None):
+         self.canvas = canvas
+         self.layer = layer
+@@ -41,7 +43,8 @@
+                     self.canvas
+                 )
+             else:
+-                print "You should set a layer"
++                # fix_print_with_import
++                print("You should set a layer")
+ 
+ 
+ canvas = iface.mapCanvas()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapTool.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapTool.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt
++from __future__ import print_function
++from qgis.PyQt.QtCore import Qt
+ from qgis.gui import QgsMapTool
+ from qgis.utils import iface
+ 
+@@ -18,7 +19,8 @@
+     def canvasReleaseEvent(self, event):
+         point = self.toLayerCoordinates(self.layer, event.pos())
+ 
+-        print(point.x(), point.y())
++        # fix_print_with_import
++        print((point.x(), point.y()))
+ 
+ layer, canvas = iface.activeLayer(), iface.mapCanvas()
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapUnitScaleDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapUnitScaleDialog.py	(refactored)
+@@ -1,4 +1,5 @@
+ # coding: utf-8
++from __future__ import print_function
+ from qgis.gui import QgsMapUnitScaleDialog
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMessageBar.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMessageBar.py	(refactored)
+@@ -3,11 +3,11 @@
+ this class documentation samples at
+ http://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/communicating.html.
+ """
++from builtins import range
+ 
+ import time
+-from PyQt4.QtCore import Qt
+-from PyQt4.QtGui import (QProgressBar, QPushButton, QDialog,
+-                         QSizePolicy, QGridLayout, QDialogButtonBox)
++from qgis.PyQt.QtCore import Qt
++from qgis.PyQt.QtWidgets import QProgressBar, QPushButton, QDialog, QSizePolicy, QGridLayout, QDialogButtonBox
+ from qgis.utils import iface
+ from qgis.gui import QgsMessageBar
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsOrderByDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsOrderByDialog.py	(refactored)
+@@ -1,3 +1,5 @@
++from __future__ import print_function
++from builtins import str
+ # coding: utf-8
+ from qgis.gui import QgsOrderByDialog
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenCapStyleComboBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenCapStyleComboBox.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from __future__ import print_function
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.gui import QgsPenCapStyleComboBox
+ 
+ # Create dialog and resize it
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenJoinStyleComboBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenJoinStyleComboBox.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from __future__ import print_function
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.gui import QgsPenJoinStyleComboBox
+ 
+ # Create dialog and resize it
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenStyleComboBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenStyleComboBox.py	(refactored)
+@@ -1,6 +1,7 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt
+-from PyQt4.QtGui import QDialog
++from __future__ import print_function
++from qgis.PyQt.QtCore import Qt
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.gui import QgsPenStyleComboBox
+ 
+ # Create dialog and resize it
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsProjectionSelector.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsProjectionSelector.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog, QVBoxLayout
++from qgis.PyQt.QtWidgets import QDialog, QVBoxLayout
+ from qgis.gui import QgsProjectionSelector
+ 
+ new_dialog = QDialog()
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsQueryBuilder.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsQueryBuilder.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QVariant
++from qgis.PyQt.QtCore import QVariant
+ from qgis.gui import QgsQueryBuilder
+ from qgis.core import (QgsFeature,
+                        QgsField, QgsGeometry,
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRasterLayerSaveAsDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRasterLayerSaveAsDialog.py	(refactored)
+@@ -1,4 +1,5 @@
+ # coding: utf-8
++from __future__ import print_function
+ from qgis.gui import QgsRasterLayerSaveAsDialog
+ from qgis.utils import iface
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRendererV2Widget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRendererV2Widget.py	(refactored)RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRubberBand.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRuleBasedRendererV2Widget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSVGFillSymbolLayerWidget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsScaleComboBox.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsScaleWidget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSlider.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSublayersDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgAnnotationItem.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgMarkerSymbolLayerV2Widget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgSelectorDialog.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgSelectorWidget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSymbolsListWidget.py
+
+@@ -1,10 +1,11 @@
+ # coding: utf-8
++from __future__ import print_function
+ import os
+ import random
+ from inspect import getsourcefile
+-from PyQt4 import uic
+-from PyQt4.QtCore import SIGNAL
+-from PyQt4.QtGui import QColorDialog, QVBoxLayout
++from qgis.PyQt import uic
++
++from qgis.PyQt.QtWidgets import QColorDialog, QVBoxLayout
+ from qgis.core import (QGis, QgsFeatureRendererV2,
+                        QgsRendererV2AbstractMetadata, QgsRendererV2Registry,
+                        QgsStyleV2, QgsSymbolV2)
+@@ -61,7 +62,7 @@
+         self.vbox = QVBoxLayout()
+         self.vbox.addWidget(self.btn1)
+         self.setLayout(self.vbox)
+-        self.connect(self.btn1, SIGNAL("clicked()"), self.setColor1)
++        self.btn1.clicked.connect(self.setColor1)
+ 
+     def setColor1(self):
+         color = QColorDialog.getColor(self.r.syms[0].color(), self)
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRubberBand.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRubberBand.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QColor
++from qgis.PyQt.QtGui import QColor
+ from qgis.core import QgsGeometry, QgsPoint
+ from qgis.gui import QgsRubberBand
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRuleBasedRendererV2Widget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRuleBasedRendererV2Widget.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding:utf-8
+-from PyQt4.QtGui import QTreeView
++from __future__ import print_function
++from qgis.PyQt.QtWidgets import QTreeView
+ from qgis.core import QgsStyleV2
+ from qgis.gui import QgsRuleBasedRendererV2Widget
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSVGFillSymbolLayerWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSVGFillSymbolLayerWidget.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QSettings
++from __future__ import print_function
++from qgis.PyQt.QtCore import QSettings
+ from qgis.core import QgsApplication
+ from qgis.gui import QgsSVGFillSymbolLayerWidget
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsScaleComboBox.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsScaleComboBox.py	(refactored)
+@@ -1,5 +1,7 @@
++from __future__ import print_function
++from builtins import range
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.gui import QgsScaleComboBox
+ from qgis.utils import iface
+ 
+@@ -10,10 +12,12 @@
+ 
+ 
+ def on_scale_changed():
+-    print(scale_box.scale(),
+-          QgsScaleComboBox.toString(scale_box.scale()))
+-    print(scale_box.scaleString(),
+-          QgsScaleComboBox.toDouble(scale_box.scaleString()))
++    # fix_print_with_import
++    print((scale_box.scale(),
++          QgsScaleComboBox.toString(scale_box.scale())))
++    # fix_print_with_import
++    print((scale_box.scaleString(),
++          QgsScaleComboBox.toDouble(scale_box.scaleString())))
+     print("Scale changed")
+     iface.mapCanvas().zoomScale(1 / scale_box.scale())
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsScaleWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsScaleWidget.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QDialog
++from __future__ import print_function
++from qgis.PyQt.QtWidgets import QDialog
+ from qgis.gui import QgsScaleWidget
+ from qgis.utils import iface
+ 
+@@ -10,10 +11,12 @@
+ 
+ 
+ def on_scale_changed():
+-    print(scale_widget.scale(),
+-          QgsScaleWidget.toString(scale_widget.scale()))
+-    print(scale_widget.scaleString(),
+-          QgsScaleWidget.toDouble(scale_widget.scaleString()))
++    # fix_print_with_import
++    print((scale_widget.scale(),
++          QgsScaleWidget.toString(scale_widget.scale())))
++    # fix_print_with_import
++    print((scale_widget.scaleString(),
++          QgsScaleWidget.toDouble(scale_widget.scaleString())))
+     print(scale_widget.showCurrentScaleButton())
+     print("Scale changed")
+     iface.mapCanvas().zoomScale(1 / scale_widget.scale())
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSlider.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSlider.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt
++from __future__ import print_function
++from qgis.PyQt.QtCore import Qt
+ from qgis.gui import QgsSlider
+ 
+ slider = QgsSlider(Qt.Horizontal)
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSublayersDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSublayersDialog.py	(refactored)
+@@ -1,4 +1,5 @@
+ # coding: utf-8
++from __future__ import print_function
+ from qgis.core import (QgsLayerTreeLayer, QgsMapLayerRegistry,
+                        QgsProject, QgsVectorLayer)
+ from qgis.gui import QgsSublayersDialog
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgAnnotationItem.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgAnnotationItem.py	(refactored)
+@@ -1,8 +1,9 @@
+ # coding: utf-8
++from __future__ import print_function
+ import inspect
+ import os
+-from PyQt4.QtCore import QSizeF
+-from PyQt4.QtGui import QColor
++from qgis.PyQt.QtCore import QSizeF
++from qgis.PyQt.QtGui import QColor
+ from qgis.core import QgsPoint
+ from qgis.gui import QgsSvgAnnotationItem
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgMarkerSymbolLayerV2Widget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgMarkerSymbolLayerV2Widget.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QSettings
++from __future__ import print_function
++from qgis.PyQt.QtCore import QSettings
+ from qgis.core import QgsApplication
+ from qgis.gui import QgsSvgMarkerSymbolLayerV2Widget
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgSelectorDialog.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgSelectorDialog.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QSettings
++from __future__ import print_function
++from qgis.PyQt.QtCore import QSettings
+ from qgis.core import QgsApplication
+ from qgis.gui import QgsSvgSelectorDialog
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgSelectorWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgSelectorWidget.py	(refactored)
+@@ -1,5 +1,6 @@
+ # coding: utf-8
+-from PyQt4.QtCore import QSettings
++from __future__ import print_function
++from qgis.PyQt.QtCore import QSettings
+ from qgis.core import QgsApplication
+ from qgis.gui import QgsSvgSelectorWidget
+ 
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSymbolsListWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSymbolsListWidget.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QMenu
++from qgis.PyQt.QtWidgets import QMenu
+ from qgis.core import QgsStyleV2
+ from qgis.gui import QgsSymbolsListWidget
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsTextAnnotationItem.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsTextAnnotationItem.py	(refactored)
+@@ -1,6 +1,7 @@
++from builtins import str
+ # coding: utf-8RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsTextAnnotationItem.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsUserInputDockWidget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsVariableEditorWidget.py
+RefactoringTool: Refactored /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsVertexMarker.py
+RefactoringTool: Files that were modified:
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsError.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsJSONUtils.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsNetworkAccessManager.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsProject.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorFileWriter.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorLayerCache.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorLayerEditUtils.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-CharacterWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsActionMenu.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAdvancedDigitizingDockWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeForm.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableFilterModel.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableModel.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAttributeTableView.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertInfo.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertInfoDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthCertTrustPolicyComboBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsAuthSslErrorsDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBlendModeComboBox-custom-signal.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBlendModeComboBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBrushStyleComboBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsBusyIndicatorDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCharacterSelectorDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCollapsibleGroupBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCollapsibleGroupBoxBasic.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorButton.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorButtonV2.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorDialogV2.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorPreviewWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorRampComboBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorRampWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorSchemeList.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorSchemeModel.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorSwatchGrid.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorSwatchGridAction.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorWheel.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsColorWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsCredentialDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsDashSpaceDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsEditorWidgetRegistry.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsEffectDrawModeComboBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsErrorDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsExpressionBuilderWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsExtentGroupBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFeatureListModel.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFeatureListView.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFieldComboBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFileWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFilterLineEdit.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsFormAnnotationItem.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsGeometryRubberBand.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsGroupWMSDataDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsHighlight.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsHtmlAnnotationItem.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsLayerPropertiesWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapCanvas.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapCanvasSnappingUtils.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapLayerComboBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapOverviewCanvas.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapTip.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapTool.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMapUnitScaleDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsMessageBar.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsOrderByDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenCapStyleComboBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenJoinStyleComboBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsPenStyleComboBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsProjectionSelector.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsQueryBuilder.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRasterLayerSaveAsDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRendererRulePropsDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRendererV2Widget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRubberBand.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsRuleBasedRendererV2Widget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSVGFillSymbolLayerWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsScaleComboBox.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsScaleWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSlider.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSublayersDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgAnnotationItem.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgMarkerSymbolLayerV2Widget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgSelectorDialog.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSvgSelectorWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsSymbolsListWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsTextAnnotationItem.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsUserInputDockWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsVariableEditorWidget.py
+RefactoringTool: /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsVertexMarker.py
+RefactoringTool: There was 1 error:
+RefactoringTool: Can't parse /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/core/qgis-sample-QgsVectorLayer.py: ParseError: bad input: type=3, value='"resultats-definitifs-consultation-26-juin-2016"', context=(' ', (14, 7))
+
+-from PyQt4.QtCore import QSizeF
+-from PyQt4.QtGui import QColor, QTextDocument
++from qgis.PyQt.QtCore import QSizeF
++from qgis.PyQt.QtGui import QColor
+ from qgis.core import QgsPoint
+ from qgis.gui import QgsTextAnnotationItem
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsUserInputDockWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsUserInputDockWidget.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtCore import Qt
++from qgis.PyQt.QtCore import Qt
+ from qgis.core import QgsCoordinateReferenceSystem
+ from qgis.gui import QgsUserInputDockWidget, QgsProjectionSelectionWidget
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsVariableEditorWidget.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsVariableEditorWidget.py	(refactored)
+@@ -1,4 +1,5 @@
+ # coding: utf-8
++from __future__ import print_function
+ from qgis.core import QgsExpressionContextUtils, QgsExpressionContext
+ from qgis.gui import QgsVariableEditorWidget
+ from qgis.utils import iface
+--- /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsVertexMarker.py	(original)
++++ /home/geopro/Documents/osGeoLive/salientrobot-dev/pyqgis-samples0/gui/qgis-sample-QgsVertexMarker.py	(refactored)
+@@ -1,5 +1,5 @@
+ # coding: utf-8
+-from PyQt4.QtGui import QColor
++from qgis.PyQt.QtGui import QColor
+ from qgis.utils import iface
+ from qgis.core import QgsPoint
+ from qgis.gui import QgsVertexMarker
+
+Process finished with exit code 1
+

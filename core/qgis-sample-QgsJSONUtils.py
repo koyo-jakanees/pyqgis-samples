@@ -1,7 +1,8 @@
 # coding: utf-8
+from __future__ import print_function
 import codecs
 import os
-from PyQt4.QtCore import QTextCodec, QVariant
+from qgis.PyQt.QtCore import QTextCodec, QVariant
 from qgis.core import (QgsApplication, QgsFeature, QgsField, QgsFields,
                        QgsGeometry, QgsJSONUtils, QgsPoint)
 from qgis.utils import iface
@@ -48,7 +49,8 @@ fields = QgsJSONUtils.stringToFields(
 )
 
 for f in fields:
-    print(f.name(), f.type())
+    # fix_print_with_import
+    print((f.name(), f.type()))
 
 # Attempts to parse a GeoJSON string to a collection of features.
 features = QgsJSONUtils.stringToFeatureList(

@@ -1,5 +1,5 @@
 # coding: utf-8
-from PyQt4.QtGui import QDialog, QTableView
+from qgis.PyQt.QtWidgets import QDialog, QTableView
 from qgis.core import QgsVectorLayerCache
 from qgis.gui import (QgsAttributeTableModel,
                       QgsAttributeTableView,

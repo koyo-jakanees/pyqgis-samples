@@ -1,5 +1,6 @@
 # coding: utf-8
-from PyQt4.QtCore import QVariant
+from __future__ import print_function
+from qgis.PyQt.QtCore import QVariant
 from qgis.core import (QgsFeature, QgsField, QgsFields,
                        QgsGeometry, QgsPoint, QgsVectorFileWriter)
 from qgis.utils import QGis, iface
@@ -37,7 +38,8 @@ writer = QgsVectorFileWriter("my_shapes.shp", "CP1250", fields,
                              QGis.WKBPoint, None, "ESRI Shapefile")
 
 if writer.hasError() != QgsVectorFileWriter.NoError:
-    print("Error when creating shapefile: ", writer.errorMessage())
+    # fix_print_with_import
+    print(("Error when creating shapefile: ", writer.errorMessage()))
 
 # Add a feature
 fet = QgsFeature()

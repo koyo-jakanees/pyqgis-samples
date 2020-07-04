@@ -1,5 +1,6 @@
 # coding: utf-8
-from PyQt4.QtGui import QDialog
+from __future__ import print_function
+from qgis.PyQt.QtWidgets import QDialog
 from qgis.gui import QgsPenCapStyleComboBox
 
 # Create dialog and resize it

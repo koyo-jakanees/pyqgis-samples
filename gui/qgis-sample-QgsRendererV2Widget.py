@@ -1,10 +1,11 @@
 # coding: utf-8
+from __future__ import print_function
 import os
 import random
 from inspect import getsourcefile
-from PyQt4 import uic
-from PyQt4.QtCore import SIGNAL
-from PyQt4.QtGui import QColorDialog, QVBoxLayout
+from qgis.PyQt import uic
+
+from qgis.PyQt.QtWidgets import QColorDialog, QVBoxLayout
 from qgis.core import (QGis, QgsFeatureRendererV2,
                        QgsRendererV2AbstractMetadata, QgsRendererV2Registry,
                        QgsStyleV2, QgsSymbolV2)
@@ -61,7 +62,7 @@ class RandomRendererWidget(QgsRendererV2Widget, WIDGET):
         self.vbox = QVBoxLayout()
         self.vbox.addWidget(self.btn1)
         self.setLayout(self.vbox)
-        self.connect(self.btn1, SIGNAL("clicked()"), self.setColor1)
+        self.btn1.clicked.connect(self.setColor1)
 
     def setColor1(self):
         color = QColorDialog.getColor(self.r.syms[0].color(), self)

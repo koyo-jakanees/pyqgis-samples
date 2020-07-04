@@ -1,5 +1,6 @@
 # coding: utf-8
-from PyQt4.QtGui import QColor
+from __future__ import print_function
+from qgis.PyQt.QtGui import QColor
 from qgis.gui import QgsColorPreviewWidget, QgsColorWidget
 
 color_preview_widget = QgsColorPreviewWidget()

@@ -1,11 +1,13 @@
+from __future__ import print_function
+from builtins import object
 # coding: utf-8
-from PyQt4.QtCore import QTimer
+from qgis.PyQt.QtCore import QTimer
 from qgis.core import QgsPoint
 from qgis.gui import QgsMapTip
 from qgis.utils import iface
 
 
-class ToolTip:
+class ToolTip(object):
     def __init__(self, canvas, layer=None):
         self.canvas = canvas
         self.layer = layer
@@ -41,7 +43,8 @@ class ToolTip:
                     self.canvas
                 )
             else:
-                print "You should set a layer"
+                # fix_print_with_import
+                print("You should set a layer")
 
 
 canvas = iface.mapCanvas()

@@ -4,7 +4,7 @@ from qgis.utils import iface
 
 map_canvas = iface.mapCanvas()
 layer = map_canvas.currentLayer()
-feature = layer.getFeatures().next()
+feature = next(layer.getFeatures())
 attribute_dialog = QgsAttributeDialog(layer, feature, True)
 attribute_dialog.show()
 

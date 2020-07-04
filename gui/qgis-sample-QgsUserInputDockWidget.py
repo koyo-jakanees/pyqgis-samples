@@ -1,5 +1,5 @@
 # coding: utf-8
-from PyQt4.QtCore import Qt
+from qgis.PyQt.QtCore import Qt
 from qgis.core import QgsCoordinateReferenceSystem
 from qgis.gui import QgsUserInputDockWidget, QgsProjectionSelectionWidget
 from qgis.utils import iface

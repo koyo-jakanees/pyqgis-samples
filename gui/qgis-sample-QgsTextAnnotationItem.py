@@ -1,6 +1,7 @@
+from builtins import str
 # coding: utf-8
-from PyQt4.QtCore import QSizeF
-from PyQt4.QtGui import QColor, QTextDocument
+from qgis.PyQt.QtCore import QSizeF
+from qgis.PyQt.QtGui import QColor
 from qgis.core import QgsPoint
 from qgis.gui import QgsTextAnnotationItem
 from qgis.utils import iface

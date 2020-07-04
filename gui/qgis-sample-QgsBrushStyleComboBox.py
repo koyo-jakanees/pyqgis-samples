@@ -1,6 +1,7 @@
 # coding: utf-8
-from PyQt4.QtCore import Qt
-from PyQt4.QtGui import QDialog
+from __future__ import print_function
+from qgis.PyQt.QtCore import Qt
+from qgis.PyQt.QtWidgets import QDialog
 from qgis.gui import QgsBrushStyleComboBox
 
 # We use the style available in brush styles.

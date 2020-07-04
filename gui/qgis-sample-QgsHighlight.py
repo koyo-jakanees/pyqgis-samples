@@ -1,6 +1,6 @@
 # coding: utf-8
-from PyQt4.QtCore import QVariant
-from PyQt4.QtGui import QColor
+from qgis.PyQt.QtCore import QVariant
+from qgis.PyQt.QtGui import QColor
 from qgis.core import (QgsFeature, QgsField,
                        QgsGeometry, QgsPoint,
                        QgsMapLayerRegistry,

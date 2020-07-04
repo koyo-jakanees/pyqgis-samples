@@ -1,5 +1,6 @@
 # coding: utf-8
-from PyQt4.QtCore import Qt
+from __future__ import print_function
+from qgis.PyQt.QtCore import Qt
 from qgis.gui import QgsAdvancedDigitizingDockWidget
 from qgis.utils import iface
 

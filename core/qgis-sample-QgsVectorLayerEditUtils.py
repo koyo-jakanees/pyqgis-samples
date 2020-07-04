@@ -1,5 +1,5 @@
 # coding: utf-8
-from PyQt4.QtCore import QVariant
+from qgis.PyQt.QtCore import QVariant
 from qgis.core import (QgsFeature,
                        QgsField, QgsGeometry,
                        QgsMapLayerRegistry,
@@ -42,7 +42,7 @@ vl.updateExtents()
 
 QgsMapLayerRegistry.instance().addMapLayer(vl)
 
-feat = vl.getFeatures().next()
+feat = next(vl.getFeatures())
 canvas = iface.mapCanvas()
 
 vector_layer_edit_utils = QgsVectorLayerEditUtils(vl)

@@ -1,0 +1,676 @@
+./core/qgis-sample-QgsProject.py::8: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./core/qgis-sample-QgsJSONUtils.py::7: Found QgsJSONUtils -> ['==Renamed to== QgsJsonUtils']
+./core/qgis-sample-QgsJSONUtils.py::19: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./core/qgis-sample-QgsJSONUtils.py::23: Found QgsJSONUtils -> ['==Renamed to== QgsJsonUtils']
+./core/qgis-sample-QgsJSONUtils.py::25: Found fields -> ['(class QgsFeature) no longer returns a pointer, but instead a QgsFields value.', '(class QgsSymbolRenderContext) now returns a QgsFields value, not a pointer.']
+./core/qgis-sample-QgsJSONUtils.py::27: Found name -> ['(class QgsSimpleMarkerSymbolLayer) and setName() have been removed. Use shape() and setShape() instead.']
+./core/qgis-sample-QgsJSONUtils.py::33: Found fields -> ['(class QgsFeature) no longer returns a pointer, but instead a QgsFields value.', '(class QgsSymbolRenderContext) now returns a QgsFields value, not a pointer.']
+./core/qgis-sample-QgsJSONUtils.py::35: Found fields -> ['(class QgsFeature) no longer returns a pointer, but instead a QgsFields value.', '(class QgsSymbolRenderContext) now returns a QgsFields value, not a pointer.']
+./core/qgis-sample-QgsJSONUtils.py::36: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./core/qgis-sample-QgsJSONUtils.py::41: Found QgsJSONUtils -> ['==Renamed to== QgsJsonUtils']
+./core/qgis-sample-QgsJSONUtils.py::46: Found QgsJSONUtils -> ['==Renamed to== QgsJsonUtils']
+./core/qgis-sample-QgsJSONUtils.py::51: Found fields -> ['(class QgsFeature) no longer returns a pointer, but instead a QgsFields value.', '(class QgsSymbolRenderContext) now returns a QgsFields value, not a pointer.']
+./core/qgis-sample-QgsJSONUtils.py::53: Found name -> ['(class QgsSimpleMarkerSymbolLayer) and setName() have been removed. Use shape() and setShape() instead.']
+./core/qgis-sample-QgsJSONUtils.py::56: Found QgsJSONUtils -> ['==Renamed to== QgsJsonUtils']
+./core/qgis-sample-QgsJSONUtils.py::58: Found fields -> ['(class QgsFeature) no longer returns a pointer, but instead a QgsFields value.', '(class QgsSymbolRenderContext) now returns a QgsFields value, not a pointer.']
+./core/qgis-sample-QgsVectorLayerCache.py::17: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./core/qgis-sample-QgsMessageLog.py::11: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./core/qgis-sample-QgsVectorLayer.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./core/qgis-sample-QgsVectorLayer.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./core/qgis-sample-QgsVectorLayer.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./core/qgis-sample-QgsVectorLayer.py::28: Found QgsTextAnnotationItem -> ['==Removed==  Use QgsTextAnnotation instead.']
+./core/qgis-sample-QgsNetworkAccessManager.py::14: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./core/qgis-sample-QgsVectorLayerEditUtils.py::5: Found QgsMapLayerRegistry -> ['==Removed==  Its functionality has been moved to QgsProject.']
+./core/qgis-sample-QgsVectorLayerEditUtils.py::6: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./core/qgis-sample-QgsVectorLayerEditUtils.py::13: Found crs -> ['(class QgsMapLayer) now returns a QgsCoordinateReferenceSystem object, not a reference. This change has no effect for PyQGIS code.']
+./core/qgis-sample-QgsVectorLayerEditUtils.py::19: Found name -> ['(class QgsSimpleMarkerSymbolLayer) and setName() have been removed. Use shape() and setShape() instead.']
+./core/qgis-sample-QgsVectorLayerEditUtils.py::23: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./core/qgis-sample-QgsVectorLayerEditUtils.py::35: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./core/qgis-sample-QgsVectorLayerEditUtils.py::37: Found addFeatures -> ['(class QgsVectorLayer) no longer accepts a makeSelected boolean, and will not automatically select newly added features. If desired, features must be manually selected by calling selectByIds() after addFeatures()']
+./core/qgis-sample-QgsVectorLayerEditUtils.py::43: Found QgsMapLayerRegistry -> ['==Removed==  Its functionality has been moved to QgsProject.']
+./core/qgis-sample-QgsVectorLayerEditUtils.py::46: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./core/qgis-sample-QgsVectorFileWriter.py::5: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./core/qgis-sample-QgsVectorFileWriter.py::6: Found QGis -> ['==Renamed== to Qgis']
+./core/qgis-sample-QgsVectorFileWriter.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./core/qgis-sample-QgsVectorFileWriter.py::10: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./core/qgis-sample-QgsVectorFileWriter.py::17: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./core/qgis-sample-QgsVectorFileWriter.py::24: Found fields -> ['(class QgsFeature) no longer returns a pointer, but instead a QgsFields value.', '(class QgsSymbolRenderContext) now returns a QgsFields value, not a pointer.']
+./core/qgis-sample-QgsVectorFileWriter.py::25: Found fields -> ['(class QgsFeature) no longer returns a pointer, but instead a QgsFields value.', '(class QgsSymbolRenderContext) now returns a QgsFields value, not a pointer.']
+./core/qgis-sample-QgsVectorFileWriter.py::26: Found fields -> ['(class QgsFeature) no longer returns a pointer, but instead a QgsFields value.', '(class QgsSymbolRenderContext) now returns a QgsFields value, not a pointer.']
+./core/qgis-sample-QgsVectorFileWriter.py::37: Found fields -> ['(class QgsFeature) no longer returns a pointer, but instead a QgsFields value.', '(class QgsSymbolRenderContext) now returns a QgsFields value, not a pointer.']
+./core/qgis-sample-QgsVectorFileWriter.py::38: Found QGis -> ['==Renamed== to Qgis']
+./core/qgis-sample-QgsVectorFileWriter.py::40: Found hasError -> ['(class QgsVectorLayerExporter) was renamed to errorCode()']
+./core/qgis-sample-QgsVectorFileWriter.py::46: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./core/qgis-sample-QgsVectorFileWriter.py::48: Found addFeature -> ['(class QgsVectorLayer) no longer accepts an alsoUpdateExtent boolean - this extra argument has been ignored for some time']
+./gui/qgis-sample-QgsColorBox.py::15: Found name -> ['(class QgsSimpleMarkerSymbolLayer) and setName() have been removed. Use shape() and setShape() instead.']
+./gui/qgis-sample-QgsFontMarkerSymbolLayerV2Widget.py::2: Found QgsFontMarkerSymbolLayerV2Widget -> ['==Renamed to== QgsFontMarkerSymbolLayerWidget']
+./gui/qgis-sample-QgsFontMarkerSymbolLayerV2Widget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsFontMarkerSymbolLayerV2Widget.py::6: Found QgsFontMarkerSymbolLayerV2Widget -> ['==Renamed to== QgsFontMarkerSymbolLayerWidget']
+./gui/qgis-sample-QgsProjectionSelector.py::3: Found QgsProjectionSelector -> ['==Removed==  Use QgsProjectionSelectionDialog instead.']
+./gui/qgis-sample-QgsProjectionSelector.py::8: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsProjectionSelector.py::10: Found QgsProjectionSelector -> ['==Removed==  Use QgsProjectionSelectionDialog instead.']
+./gui/qgis-sample-QgsProjectionSelector.py::12: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsProjectionSelector.py::14: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsAttributeTypeLoadDialog.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeTypeLoadDialog.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsVectorColorBrewerColorRampV2Dialog.py::2: Found QgsVectorColorBrewerColorRampV2 -> ['==Renamed to== QgsColorBrewerColorRamp']
+./gui/qgis-sample-QgsVectorColorBrewerColorRampV2Dialog.py::3: Found QgsVectorColorBrewerColorRampV2Dialog -> ['==Renamed to== QgsColorBrewerColorRampDialog']
+./gui/qgis-sample-QgsVectorColorBrewerColorRampV2Dialog.py::5: Found QgsVectorColorBrewerColorRampV2Dialog -> ['==Renamed to== QgsColorBrewerColorRampDialog']
+./gui/qgis-sample-QgsVectorColorBrewerColorRampV2Dialog.py::6: Found QgsVectorColorBrewerColorRampV2 -> ['==Renamed to== QgsColorBrewerColorRamp']
+./gui/qgis-sample-QgsRendererRulePropsDialog.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsRendererRulePropsDialog.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererRulePropsDialog.py::7: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsRendererRulePropsDialog.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererRulePropsDialog.py::10: Found QgsRuleBasedRendererV2 -> ['==Renamed to== QgsRuleBasedRenderer']
+./gui/qgis-sample-QgsRendererRulePropsDialog.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererRulePropsDialog.py::12: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsEllipseSymbolLayerV2Widget.py::2: Found QgsEllipseSymbolLayerV2Widget -> ['==Renamed to== QgsEllipseSymbolLayerWidget']
+./gui/qgis-sample-QgsEllipseSymbolLayerV2Widget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsEllipseSymbolLayerV2Widget.py::6: Found QgsEllipseSymbolLayerV2Widget -> ['==Renamed to== QgsEllipseSymbolLayerWidget']
+./gui/qgis-sample-CharacterWidget.py::18: Found getColumns -> ['(class CharacterWidget) was renamed to columns()']
+./gui/qgis-sample-CharacterWidget.py::19: Found updateColumns -> ['(class CharacterWidget) was renamed to setColumns()']
+./gui/qgis-sample-CharacterWidget.py::21: Found getSquareSize -> ['(class CharacterWidget) was renamed to squareSize()']
+./gui/qgis-sample-CharacterWidget.py::22: Found updateFont -> ['(class CharacterWidget) was renamed to setFont()']
+./gui/qgis-sample-CharacterWidget.py::23: Found updateSize -> ['(class CharacterWidget) was renamed to setFontSize()']
+./gui/qgis-sample-CharacterWidget.py::24: Found updateStyle -> ['(class CharacterWidget) was renamed to setFontStyle()']
+./gui/qgis-sample-QgsFieldComboBox.py::17: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsFieldComboBox.py::18: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsFieldComboBox.py::19: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsFieldComboBox.py::31: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsFieldComboBox.py::32: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeTableView.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeTableView.py::10: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsAttributeTableView.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::4: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::5: Found QgsRuleBasedRendererV2Widget -> ['==Renamed to== QgsRuleBasedRendererWidget']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::9: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::10: Found QgsRuleBasedRendererV2Widget -> ['==Renamed to== QgsRuleBasedRendererWidget']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::12: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::13: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::16: Found setMapCanvas -> ['(class QgsLayerPropertiesWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) and mapCanvas() have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::20: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::24: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py::25: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSmartGroupEditorDialog.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsSmartGroupEditorDialog.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSmartGroupEditorDialog.py::8: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsAuthSslErrorsDialog.py::9: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./gui/qgis-sample-QgsSvgSelectorWidget.py::35: Found currentSvgPathToName -> ['(class QgsSvgSelectorWidget) has been removed - absolute paths are always used.']
+./gui/qgis-sample-QgsSvgSelectorWidget.py::36: Found filePathButton -> ['(class QgsSvgSelectorWidget), relativePathCheckbox(), selectorLayout() have been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsSvgSelectorWidget.py::38: Found filePathLineEdit -> ['(class QgsSvgSelectorWidget), filePathButton(), relativePathCheckbox(), selectorLayout() have been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsSvgSelectorWidget.py::39: Found groupsTreeView -> ['(class QgsSvgSelectorWidget), imagesListView(), filePathLineEdit(), filePathButton(), relativePathCheckbox(), selectorLayout() have been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsSvgSelectorWidget.py::40: Found imagesListView -> ['(class QgsSvgSelectorWidget), filePathLineEdit(), filePathButton(), relativePathCheckbox(), selectorLayout() have been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsSvgSelectorWidget.py::41: Found relativePathCheckbox -> ['(class QgsSvgSelectorWidget), selectorLayout() have been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsSvgSelectorWidget.py::42: Found selectorLayout -> ['(class QgsSvgSelectorWidget) have been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsLayerPropertiesWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsLayerPropertiesWidget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsLayerPropertiesWidget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsLayerPropertiesWidget.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsComposerRuler.py::7: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsColorDialogV2.py::16: Found name -> ['(class QgsSimpleMarkerSymbolLayer) and setName() have been removed. Use shape() and setShape() instead.']
+./gui/qgis-sample-QgsColorDialogV2.py::24: Found setAllowAlpha -> ['(class QgsColorButton) and allowAlpha() were removed. Use setAllowOpacity() and allowOpacity() instead.', '(class QgsColorDialog) was removed. Use setAllowOpacity() instead.', '(class QgsCompoundColorWidget) was removed. Use setAllowOpacity() instead.']
+./gui/qgis-sample-QgsMapOverviewCanvas.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapOverviewCanvas.py::9: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsMapOverviewCanvas.py::14: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsMapOverviewCanvas.py::21: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapOverviewCanvas.py::22: Found setLayerSet -> ['(class QgsMapCanvas) has been replaced by setLayers() which accepts list of QgsMapLayer objects instead of QgsMapCanvasLayer objects', '(class QgsMapOverviewCanvas) have been replaced by layers() and setLayers() which work with list of layers instead of layer IDs']
+./gui/qgis-sample-QgsMapOverviewCanvas.py::28: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsMapOverviewCanvas.py::30: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsMapOverviewCanvas.py::38: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsSimpleLineSymbolLayerV2Widget.py::2: Found QgsSimpleLineSymbolLayerV2Widget -> ['==Renamed to== QgsSimpleLineSymbolLayerWidget']
+./gui/qgis-sample-QgsSimpleLineSymbolLayerV2Widget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSimpleLineSymbolLayerV2Widget.py::7: Found QgsSimpleLineSymbolLayerV2Widget -> ['==Renamed to== QgsSimpleLineSymbolLayerWidget']
+./gui/qgis-sample-QgsSimpleLineSymbolLayerV2Widget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsStyleV2ExportImportDialog.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsStyleV2ExportImportDialog.py::3: Found QgsStyleV2ExportImportDialog -> ['==Renamed to== QgsStyleExportImportDialog']
+./gui/qgis-sample-QgsStyleV2ExportImportDialog.py::5: Found QgsStyleV2ExportImportDialog -> ['==Renamed to== QgsStyleExportImportDialog']
+./gui/qgis-sample-QgsStyleV2ExportImportDialog.py::6: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsEditorWidgetRegistry.py::6: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./gui/qgis-sample-QgsEditorWidgetRegistry.py::23: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsEditorWidgetRegistry.py::24: Found editFormConfig -> ['(class QgsVectorLayer) returns a copy instead of direct access (Use setEditFormConfig to update)']
+./gui/qgis-sample-QgsEditorWidgetRegistry.py::25: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsEditorWidgetRegistry.py::26: Found editFormConfig -> ['(class QgsVectorLayer) returns a copy instead of direct access (Use setEditFormConfig to update)']
+./gui/qgis-sample-QgsEditorWidgetRegistry.py::27: Found editFormConfig -> ['(class QgsVectorLayer) returns a copy instead of direct access (Use setEditFormConfig to update)']
+./gui/qgis-sample-QgsEditorWidgetRegistry.py::28: Found create -> ['(class QgsSvgSelectorWidget) has been removed - use ordinary constructor instead.']
+./gui/qgis-sample-QgsEditorWidgetRegistry.py::29: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsStyleV2GroupSelectionDialog.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsStyleV2GroupSelectionDialog.py::3: Found QgsStyleV2GroupSelectionDialog -> ['==Renamed to== QgsStyleGroupSelectionDialog']
+./gui/qgis-sample-QgsStyleV2GroupSelectionDialog.py::5: Found QgsStyleV2GroupSelectionDialog -> ['==Renamed to== QgsStyleGroupSelectionDialog']
+./gui/qgis-sample-QgsStyleV2GroupSelectionDialog.py::6: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsRendererV2Widget.py::9: Found QGis -> ['==Renamed== to Qgis']
+./gui/qgis-sample-QgsRendererV2Widget.py::10: Found QgsRendererV2AbstractMetadata -> ['==Renamed to== QgsRendererAbstractMetadata']
+./gui/qgis-sample-QgsRendererV2Widget.py::11: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsRendererV2Widget.py::12: Found QgsColorButtonV2 -> ['==Renamed to== QgsColorButton']
+./gui/qgis-sample-QgsRendererV2Widget.py::25: Found QgsFeatureRendererV2 -> ['==Renamed to== QgsFeatureRenderer']
+./gui/qgis-sample-QgsRendererV2Widget.py::27: Found QgsFeatureRendererV2 -> ['==Renamed to== QgsFeatureRenderer']
+./gui/qgis-sample-QgsRendererV2Widget.py::29: Found QGis -> ['==Renamed== to Qgis']
+./gui/qgis-sample-QgsRendererV2Widget.py::30: Found QGis -> ['==Renamed== to Qgis']
+./gui/qgis-sample-QgsRendererV2Widget.py::36: Found startRender -> ['(class QgsSymbol) now accepts a QgsFields reference, not a pointer.']
+./gui/qgis-sample-QgsRendererV2Widget.py::38: Found startRender -> ['(class QgsSymbol) now accepts a QgsFields reference, not a pointer.']
+./gui/qgis-sample-QgsRendererV2Widget.py::44: Found usedAttributes -> ['(class QgsFeatureRendererV2) now requires a QgsRenderContext argument.', '(class QgsSymbol) now requires a QgsRenderContext argument.', '(class QgsSymbolLayer) now requires a QgsRenderContext argument']
+./gui/qgis-sample-QgsRendererV2Widget.py::47: Found clone -> ['(class QgsPluginLayer): new pure virtual method. Plugin layer must implement clone().']
+./gui/qgis-sample-QgsRendererV2Widget.py::51: Found QgsRendererV2Widget -> ['==Renamed to== QgsRendererWidget']
+./gui/qgis-sample-QgsRendererV2Widget.py::52: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererV2Widget.py::53: Found QgsRendererV2Widget -> ['==Renamed to== QgsRendererWidget']
+./gui/qgis-sample-QgsRendererV2Widget.py::60: Found QgsColorButtonV2 -> ['==Renamed to== QgsColorButton']
+./gui/qgis-sample-QgsRendererV2Widget.py::69: Found isValid -> ['(class QgsExpression) has been renamed to checkExpression()']
+./gui/qgis-sample-QgsRendererV2Widget.py::78: Found QgsRendererV2AbstractMetadata -> ['==Renamed to== QgsRendererAbstractMetadata']
+./gui/qgis-sample-QgsRendererV2Widget.py::80: Found QgsRendererV2AbstractMetadata -> ['==Renamed to== QgsRendererAbstractMetadata']
+./gui/qgis-sample-QgsRendererV2Widget.py::86: Found createRenderer -> ["(class QgsCategorizedRenderer) and updateColorRamp()'s inverted parameter is gone", "(class QgsGraduatedRenderer) and updateColorRamp()'s inverted parameter is gone", '(class QgsRendererAbstractMetadata) now expects a reference to QgsReadWriteContext as the second argument']
+./gui/qgis-sample-QgsRendererV2Widget.py::89: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererV2Widget.py::90: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererV2Widget.py::92: Found QgsRendererV2Registry -> ['==Renamed to== QgsRendererRegistry']
+./gui/qgis-sample-QgsRendererV2Widget.py::94: Found QgsRendererV2Registry -> ['==Renamed to== QgsRendererRegistry']
+./gui/qgis-sample-QgsRendererV2Widget.py::95: Found QgsRendererV2Registry -> ['==Renamed to== QgsRendererRegistry']
+./gui/qgis-sample-QgsRendererV2Widget.py::97: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererV2Widget.py::99: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsRendererV2Widget.py::101: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererV2Widget.py::108: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererV2Widget.py::110: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsRendererV2Widget.py::111: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapToolZoom.py::5: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsTextAnnotationItem.py::5: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsTextAnnotationItem.py::6: Found QgsTextAnnotationItem -> ['==Removed==  Use QgsTextAnnotation instead.']
+./gui/qgis-sample-QgsTextAnnotationItem.py::9: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsTextAnnotationItem.py::10: Found QgsTextAnnotationItem -> ['==Removed==  Use QgsTextAnnotation instead.']
+./gui/qgis-sample-QgsTextAnnotationItem.py::12: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsOrderByDialog.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsOrderByDialog.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsOrderByDialog.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsOrderByDialog.py::15: Found expression -> ['(class QgsEditFormConfig), setExpression(), expressionDescription() and setExpressionDescription()', '(class QgsSymbolLayer) was removed.']
+./gui/qgis-sample-QgsPointPatternFillSymbolLayerWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsPointPatternFillSymbolLayerWidget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsManageConnectionsDialog.py::7: Found mode -> ['(class QgsMapToolAdvancedDigitizing) and CaptureMode enum have been moved to QgsMapToolCapture subclass']
+./gui/qgis-sample-QgsManageConnectionsDialog.py::14: Found mode -> ['(class QgsMapToolAdvancedDigitizing) and CaptureMode enum have been moved to QgsMapToolCapture subclass']
+./gui/qgis-sample-QgsMapTip.py::5: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsMapTip.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTip.py::13: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTip.py::16: Found map -> ['(class QgsMapCanvas) has been removed because QgsMapCanvasMap is not available in API anymore.']
+./gui/qgis-sample-QgsMapTip.py::23: Found map -> ['(class QgsMapCanvas) has been removed because QgsMapCanvasMap is not available in API anymore.']
+./gui/qgis-sample-QgsMapTip.py::24: Found map -> ['(class QgsMapCanvas) has been removed because QgsMapCanvasMap is not available in API anymore.']
+./gui/qgis-sample-QgsMapTip.py::26: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsMapTip.py::27: Found clear -> ['(class QgsMapCanvas) has been removed. Use refresh() instead.']
+./gui/qgis-sample-QgsMapTip.py::31: Found map -> ['(class QgsMapCanvas) has been removed because QgsMapCanvasMap is not available in API anymore.']
+./gui/qgis-sample-QgsMapTip.py::38: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTip.py::40: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTip.py::47: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTip.py::50: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsMapTip.py::51: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTip.py::54: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTip.py::55: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTip.py::56: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapToolPan.py::5: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsQueryBuilder.py::6: Found QgsMapLayerRegistry -> ['==Removed==  Its functionality has been moved to QgsProject.']
+./gui/qgis-sample-QgsQueryBuilder.py::7: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsQueryBuilder.py::13: Found crs -> ['(class QgsMapLayer) now returns a QgsCoordinateReferenceSystem object, not a reference. This change has no effect for PyQGIS code.']
+./gui/qgis-sample-QgsQueryBuilder.py::19: Found name -> ['(class QgsSimpleMarkerSymbolLayer) and setName() have been removed. Use shape() and setShape() instead.']
+./gui/qgis-sample-QgsQueryBuilder.py::23: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsQueryBuilder.py::35: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsQueryBuilder.py::37: Found addFeatures -> ['(class QgsVectorLayer) no longer accepts a makeSelected boolean, and will not automatically select newly added features. If desired, features must be manually selected by calling selectByIds() after addFeatures()']
+./gui/qgis-sample-QgsQueryBuilder.py::43: Found QgsMapLayerRegistry -> ['==Removed==  Its functionality has been moved to QgsProject.']
+./gui/qgis-sample-QgsQueryBuilder.py::47: Found accept -> ['(class QgsAttributeForm) was removed. Use save() instead.']
+./gui/qgis-sample-QgsHistogramWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsHistogramWidget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapLayerComboBox.py::17: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsMapLayerComboBox.py::18: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsMapLayerComboBox.py::19: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsMapLayerComboBox.py::31: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsMapLayerComboBox.py::32: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsPalettedRendererWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsPalettedRendererWidget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRubberBand.py::3: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsRubberBand.py::7: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsRubberBand.py::10: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsRubberBand.py::11: Found fromPolyline -> ['(class QgsGeometry) now requires a list of QgsPoint objects, instead of QgsPointXY 2d points. A new method fromPolylineXY was']
+./gui/qgis-sample-QgsRubberBand.py::16: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsRubberBand.py::17: Found fromPolygon -> ['(class QgsGeometry) was renamed to fromPolygonXY()']
+./gui/qgis-sample-QgsStyleV2ManagerDialog.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsStyleV2ManagerDialog.py::3: Found QgsStyleV2ManagerDialog -> ['==Renamed to== QgsStyleManagerDialog']
+./gui/qgis-sample-QgsStyleV2ManagerDialog.py::5: Found QgsStyleV2ManagerDialog -> ['==Renamed to== QgsStyleManagerDialog']
+./gui/qgis-sample-QgsStyleV2ManagerDialog.py::6: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsLayerTreeView.py::5: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./gui/qgis-sample-QgsHighlight.py::5: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsHighlight.py::6: Found QgsMapLayerRegistry -> ['==Removed==  Its functionality has been moved to QgsProject.']
+./gui/qgis-sample-QgsHighlight.py::12: Found crs -> ['(class QgsMapLayer) now returns a QgsCoordinateReferenceSystem object, not a reference. This change has no effect for PyQGIS code.']
+./gui/qgis-sample-QgsHighlight.py::18: Found name -> ['(class QgsSimpleMarkerSymbolLayer) and setName() have been removed. Use shape() and setShape() instead.']
+./gui/qgis-sample-QgsHighlight.py::22: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsHighlight.py::34: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsHighlight.py::36: Found addFeatures -> ['(class QgsVectorLayer) no longer accepts a makeSelected boolean, and will not automatically select newly added features. If desired, features must be manually selected by calling selectByIds() after addFeatures()']
+./gui/qgis-sample-QgsHighlight.py::42: Found QgsMapLayerRegistry -> ['==Removed==  Its functionality has been moved to QgsProject.']
+./gui/qgis-sample-QgsHighlight.py::45: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsHighlight.py::46: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsHighlight.py::53: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsCptCityColorRampV2Dialog.py::2: Found QgsCptCityColorRampV2 -> ['==Renamed to== QgsCptCityColorRamp']
+./gui/qgis-sample-QgsCptCityColorRampV2Dialog.py::3: Found QgsCptCityColorRampV2Dialog -> ['==Renamed to== QgsCptCityColorRampDialog']
+./gui/qgis-sample-QgsCptCityColorRampV2Dialog.py::5: Found QgsCptCityColorRampV2Dialog -> ['==Renamed to== QgsCptCityColorRampDialog']
+./gui/qgis-sample-QgsCptCityColorRampV2Dialog.py::6: Found QgsCptCityColorRampV2 -> ['==Renamed to== QgsCptCityColorRamp']
+./gui/qgis-sample-QgsFileDropEdit.py::2: Found QgsFileDropEdit -> ['==Removed== was removed. Use QgsFileWidget instead.']
+./gui/qgis-sample-QgsFileDropEdit.py::4: Found QgsFileDropEdit -> ['==Removed== was removed. Use QgsFileWidget instead.']
+./gui/qgis-sample-QgsExtentGroupBox.py::7: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsExtentGroupBox.py::8: Found extent -> ['(class QgsMapLayer), styleURI(), exportNamedStyle(), exportSldStyle(), writeXml(), metadata() were made const. This has no effect on PyQGIS code, but c++ code implementing derived layer classes will need to update the signatures of these methods to match.']
+./gui/qgis-sample-QgsExtentGroupBox.py::20: Found destinationCrs -> ['(class QgsGraphBuilderInterface) now returns a copy instead of a reference to the CRS. This has no effect on PyQGIS code, but c++', '(class QgsMapSettings) now returns a copy instead of a reference to the CRS. This has no effect on PyQGIS code, but c++', '(class QgsPointLocator) now returns a copy instead of a reference to the CRS. This has no effect on PyQGIS code, but c++']
+./gui/qgis-sample-QgsColorSchemeModel.py::5: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./gui/qgis-sample-QgsVectorRandomColorRampV2Dialog.py::2: Found QgsVectorRandomColorRampV2 -> ['==Renamed to== QgsLimitedRandomColorRamp']
+./gui/qgis-sample-QgsVectorRandomColorRampV2Dialog.py::3: Found QgsVectorRandomColorRampV2Dialog -> ['==Renamed to== QgsLimitedRandomColorRampDialog']
+./gui/qgis-sample-QgsVectorRandomColorRampV2Dialog.py::5: Found QgsVectorRandomColorRampV2Dialog -> ['==Renamed to== QgsLimitedRandomColorRampDialog']
+./gui/qgis-sample-QgsVectorRandomColorRampV2Dialog.py::6: Found QgsVectorRandomColorRampV2 -> ['==Renamed to== QgsLimitedRandomColorRamp']
+./gui/qgis-sample-QgsEffectDrawModeComboBox.py::20: Found draw -> ['(class QgsMapLayer) has been removed. Use createMapRenderer() method for rendering of layers.', '(class QgsRasterDataProvider) has been removed from the interface as it was not used anywhere.']
+./gui/qgis-sample-QgsSimpleFillSymbolLayerV2Widget.py::2: Found QgsSimpleFillSymbolLayerV2Widget -> ['==Renamed to== QgsSimpleFillSymbolLayerWidget']
+./gui/qgis-sample-QgsSimpleFillSymbolLayerV2Widget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSimpleFillSymbolLayerV2Widget.py::7: Found QgsSimpleFillSymbolLayerV2Widget -> ['==Renamed to== QgsSimpleFillSymbolLayerWidget']
+./gui/qgis-sample-QgsSimpleFillSymbolLayerV2Widget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-Qgs25DRendererWidget.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-Qgs25DRendererWidget.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-Qgs25DRendererWidget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-Qgs25DRendererWidget.py::9: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-Qgs25DRendererWidget.py::10: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-Qgs25DRendererWidget.py::15: Found create -> ['(class QgsSvgSelectorWidget) has been removed - use ordinary constructor instead.']
+./gui/qgis-sample-Qgs25DRendererWidget.py::16: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-Qgs25DRendererWidget.py::17: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-Qgs25DRendererWidget.py::18: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererV2PropertiesDialog.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsRendererV2PropertiesDialog.py::3: Found QgsRendererV2PropertiesDialog -> ['==Renamed to== QgsRendererPropertiesDialog']
+./gui/qgis-sample-QgsRendererV2PropertiesDialog.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererV2PropertiesDialog.py::8: Found QgsRendererV2PropertiesDialog -> ['==Renamed to== QgsRendererPropertiesDialog']
+./gui/qgis-sample-QgsRendererV2PropertiesDialog.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRendererV2PropertiesDialog.py::10: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsSublayersDialog.py::3: Found QgsMapLayerRegistry -> ['==Removed==  Its functionality has been moved to QgsProject.']
+./gui/qgis-sample-QgsSublayersDialog.py::9: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./gui/qgis-sample-QgsSublayersDialog.py::11: Found layers -> ['(class QgsMapSettings) and setLayers() now work with list of layers instead of layer IDs']
+./gui/qgis-sample-QgsSublayersDialog.py::14: Found QgsMapLayerRegistry -> ['==Removed==  Its functionality has been moved to QgsProject.']
+./gui/qgis-sample-QgsSublayersDialog.py::15: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSublayersDialog.py::16: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSublayersDialog.py::17: Found layers -> ['(class QgsMapSettings) and setLayers() now work with list of layers instead of layer IDs']
+./gui/qgis-sample-QgsSublayersDialog.py::18: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSublayersDialog.py::19: Found featureCount -> ['(class QgsVectorLayer) now requires a legend key string instead of a QgsSymbol pointer argument.']
+./gui/qgis-sample-QgsSublayersDialog.py::22: Found layers -> ['(class QgsMapSettings) and setLayers() now work with list of layers instead of layer IDs']
+./gui/qgis-sample-QgsSublayersDialog.py::27: Found selectionNames -> ['(class QgsSublayersDialog) and selectionIndexes() were removed. Use selection().']
+./gui/qgis-sample-QgsSublayersDialog.py::29: Found selectionIndexes -> ['(class QgsSublayersDialog) were removed. Use selection().']
+./gui/qgis-sample-QgsFeatureListModel.py::13: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsFeatureListModel.py::14: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsFeatureListModel.py::16: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsEncodingFileDialog.py::8: Found name -> ['(class QgsSimpleMarkerSymbolLayer) and setName() have been removed. Use shape() and setShape() instead.']
+./gui/qgis-sample-QgsInvertedPolygonRendererWidget.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsInvertedPolygonRendererWidget.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsInvertedPolygonRendererWidget.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsInvertedPolygonRendererWidget.py::10: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsInvertedPolygonRendererWidget.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsColorSchemeList.py::5: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./gui/qgis-sample-QgsMapCanvasSnappingUtils.py::8: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsMapCanvasSnappingUtils.py::28: Found layers -> ['(class QgsMapSettings) and setLayers() now work with list of layers instead of layer IDs']
+./gui/qgis-sample-QgsMapCanvas.py::4: Found QgsMapLayerRegistry -> ['==Removed==  Its functionality has been moved to QgsProject.']
+./gui/qgis-sample-QgsMapCanvas.py::5: Found QgsMapCanvasLayer -> ['==Removed==  Map canvas and overview canvas are updated separately with their own setLayers() calls.']
+./gui/qgis-sample-QgsMapCanvas.py::14: Found QgsMapLayerRegistry -> ['==Removed==  Its functionality has been moved to QgsProject.']
+./gui/qgis-sample-QgsMapCanvas.py::15: Found QgsMapCanvasLayer -> ['==Removed==  Map canvas and overview canvas are updated separately with their own setLayers() calls.']
+./gui/qgis-sample-QgsMapCanvas.py::16: Found setLayerSet -> ['(class QgsMapCanvas) has been replaced by setLayers() which accepts list of QgsMapLayer objects instead of QgsMapCanvasLayer objects', '(class QgsMapOverviewCanvas) have been replaced by layers() and setLayers() which work with list of layers instead of layer IDs']
+./gui/qgis-sample-QgsMapCanvas.py::17: Found extent -> ['(class QgsMapLayer), styleURI(), exportNamedStyle(), exportSldStyle(), writeXml(), metadata() were made const. This has no effect on PyQGIS code, but c++ code implementing derived layer classes will need to update the signatures of these methods to match.']
+./gui/qgis-sample-QgsScaleVisibilityDialog.py::5: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsColorButtonV2.py::3: Found QgsColorButtonV2 -> ['==Renamed to== QgsColorButton']
+./gui/qgis-sample-QgsColorButtonV2.py::8: Found QgsColorButtonV2 -> ['==Renamed to== QgsColorButton']
+./gui/qgis-sample-QgsGenericProjectionSelector.py::2: Found QgsGenericProjectionSelector -> ['==Removed==  Use QgsProjectionSelectionTreeWidget instead.']
+./gui/qgis-sample-QgsGenericProjectionSelector.py::4: Found QgsGenericProjectionSelector -> ['==Removed==  Use QgsProjectionSelectionTreeWidget instead.']
+./gui/qgis-sample-QgsPointDisplacementRendererWidget.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsPointDisplacementRendererWidget.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsPointDisplacementRendererWidget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsPointDisplacementRendererWidget.py::9: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsPointDisplacementRendererWidget.py::10: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsVectorFieldSymbolLayerWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsVectorFieldSymbolLayerWidget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsExpressionBuilderDialog.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsExpressionBuilderDialog.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGeometryRubberBand.py::4: Found QGis -> ['==Renamed== to Qgis']
+./gui/qgis-sample-QgsGeometryRubberBand.py::8: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsGeometryRubberBand.py::11: Found QGis -> ['==Renamed== to Qgis']
+./gui/qgis-sample-QgsGeometryRubberBand.py::12: Found QgsPointV2 -> ['==Renamed to== QgsPoint']
+./gui/qgis-sample-QgsGeometryRubberBand.py::16: Found QGis -> ['==Renamed== to Qgis']
+./gui/qgis-sample-QgsGeometryRubberBand.py::17: Found QgsPointV2 -> ['==Renamed to== QgsPoint']
+./gui/qgis-sample-QgsGeometryRubberBand.py::18: Found QgsLineStringV2 -> ['==Renamed to== QgsLineString']
+./gui/qgis-sample-QgsGeometryRubberBand.py::23: Found QGis -> ['==Renamed== to Qgis']
+./gui/qgis-sample-QgsGeometryRubberBand.py::24: Found QgsPointV2 -> ['==Renamed to== QgsPoint']
+./gui/qgis-sample-QgsGeometryRubberBand.py::25: Found QgsLineStringV2 -> ['==Renamed to== QgsLineString']
+./gui/qgis-sample-QgsGeometryRubberBand.py::27: Found QgsPolygonV2 -> ['==Renamed to== QgsPolygon']
+./gui/qgis-sample-QgsSimpleMarkerSymbolLayerV2Widget.py::2: Found QgsSimpleMarkerSymbolLayerV2Widget -> ['==Renamed to== QgsSimpleMarkerSymbolLayerWidget']
+./gui/qgis-sample-QgsSimpleMarkerSymbolLayerV2Widget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSimpleMarkerSymbolLayerV2Widget.py::7: Found QgsSimpleMarkerSymbolLayerV2Widget -> ['==Renamed to== QgsSimpleMarkerSymbolLayerWidget']
+./gui/qgis-sample-QgsSimpleMarkerSymbolLayerV2Widget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAdvancedDigitizingDockWidget.py::7: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsAdvancedDigitizingDockWidget.py::15: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./gui/qgis-sample-QgsFieldConditionalFormatWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsFieldConditionalFormatWidget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapUnitScaleDialog.py::20: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsShapeburstFillSymbolLayerV2Widget.py::2: Found QgsShapeburstFillSymbolLayerV2Widget -> ['==Renamed to== QgsShapeburstFillSymbolLayerWidget']
+./gui/qgis-sample-QgsShapeburstFillSymbolLayerV2Widget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsShapeburstFillSymbolLayerV2Widget.py::7: Found QgsShapeburstFillSymbolLayerV2Widget -> ['==Renamed to== QgsShapeburstFillSymbolLayerWidget']
+./gui/qgis-sample-QgsShapeburstFillSymbolLayerV2Widget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsDialog.py::8: Found dialog -> ['(class QgsAttributeDialog) was removed - just use the object directly.', '(class QgsProjectionSelectionWidget) has been removed']
+./gui/qgis-sample-QgsDialog.py::12: Found dialog -> ['(class QgsAttributeDialog) was removed - just use the object directly.', '(class QgsProjectionSelectionWidget) has been removed']
+./gui/qgis-sample-QgsDialog.py::14: Found dialog -> ['(class QgsAttributeDialog) was removed - just use the object directly.', '(class QgsProjectionSelectionWidget) has been removed']
+./gui/qgis-sample-QgsUnitSelectionWidget.py::5: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsUnitSelectionWidget.py::7: Found setMapCanvas -> ['(class QgsLayerPropertiesWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) and mapCanvas() have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::3: Found QgsSingleSymbolRendererV2Widget -> ['==Renamed to== QgsSingleSymbolRendererWidget']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::7: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::8: Found QgsSingleSymbolRendererV2Widget -> ['==Renamed to== QgsSingleSymbolRendererWidget']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::10: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::14: Found setMapCanvas -> ['(class QgsLayerPropertiesWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) and mapCanvas() have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::18: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::22: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py::23: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGradientFillSymbolLayerV2Widget.py::2: Found QgsGradientFillSymbolLayerV2Widget -> ['==Renamed to== QgsGradientFillSymbolLayerWidget']
+./gui/qgis-sample-QgsGradientFillSymbolLayerV2Widget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGradientFillSymbolLayerV2Widget.py::6: Found QgsGradientFillSymbolLayerV2Widget -> ['==Renamed to== QgsGradientFillSymbolLayerWidget']
+./gui/qgis-sample-QgsGradientFillSymbolLayerV2Widget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSizeScaleWidget.py::2: Found QgsMarkerSymbolV2 -> ['==Renamed to== QgsMarkerSymbol']
+./gui/qgis-sample-QgsSizeScaleWidget.py::3: Found QgsSizeScaleWidget -> ['==Removed==  Use QgsPropertyAssistantWidget instead.']
+./gui/qgis-sample-QgsSizeScaleWidget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSizeScaleWidget.py::8: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsSizeScaleWidget.py::9: Found QgsMarkerSymbolV2 -> ['==Renamed to== QgsMarkerSymbol']
+./gui/qgis-sample-QgsSizeScaleWidget.py::11: Found name -> ['(class QgsSimpleMarkerSymbolLayer) and setName() have been removed. Use shape() and setShape() instead.']
+./gui/qgis-sample-QgsSizeScaleWidget.py::14: Found QgsSizeScaleWidget -> ['==Removed==  Use QgsPropertyAssistantWidget instead.']
+./gui/qgis-sample-QgsSizeScaleWidget.py::15: Found setMapCanvas -> ['(class QgsLayerPropertiesWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) and mapCanvas() have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsHeatmapRendererWidget.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsHeatmapRendererWidget.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsHeatmapRendererWidget.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsHeatmapRendererWidget.py::10: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsHeatmapRendererWidget.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeTableFilterModel.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeTableFilterModel.py::10: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsAttributeTableFilterModel.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeForm3.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeForm3.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeDialog.py::5: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsAttributeDialog.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeDialog.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeDialog.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeDialog.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSymbolV2SelectorDialog.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsSymbolV2SelectorDialog.py::3: Found QgsSymbolV2SelectorDialog -> ['==Renamed to== QgsSymbolSelectorDialog']
+./gui/qgis-sample-QgsSymbolV2SelectorDialog.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSymbolV2SelectorDialog.py::7: Found QgsSymbolV2SelectorDialog -> ['==Renamed to== QgsSymbolSelectorDialog']
+./gui/qgis-sample-QgsSymbolV2SelectorDialog.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSymbolV2SelectorDialog.py::9: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsSymbolV2SelectorDialog.py::10: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsActionMenu.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsActionMenu.py::7: Found actions -> ['(class QgsDataItem) now requires a new QWidget parent argument. Subclasses should ensure that returned items have been']
+./gui/qgis-sample-QgsActionMenu.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsActionMenu.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsActionMenu.py::17: Found actions -> ['(class QgsDataItem) now requires a new QWidget parent argument. Subclasses should ensure that returned items have been']
+./gui/qgis-sample-QgsActionMenu.py::22: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSearchQueryBuilder.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSearchQueryBuilder.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsVectorGradientColorRampV2Dialog.py::2: Found QgsVectorGradientColorRampV2 -> ['==Renamed to== QgsGradientColorRamp']
+./gui/qgis-sample-QgsVectorGradientColorRampV2Dialog.py::3: Found QgsVectorGradientColorRampV2Dialog -> ['==Renamed to== QgsGradientColorRampDialog']
+./gui/qgis-sample-QgsVectorGradientColorRampV2Dialog.py::5: Found QgsVectorGradientColorRampV2Dialog -> ['==Renamed to== QgsGradientColorRampDialog']
+./gui/qgis-sample-QgsVectorGradientColorRampV2Dialog.py::6: Found QgsVectorGradientColorRampV2 -> ['==Renamed to== QgsGradientColorRamp']
+./gui/qgis-sample-QgsExpressionSelectionDialog.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsExpressionSelectionDialog.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSvgMarkerSymbolLayerV2Widget.py::5: Found QgsSvgMarkerSymbolLayerV2Widget -> ['==Renamed to== QgsSvgMarkerSymbolLayerWidget']
+./gui/qgis-sample-QgsSvgMarkerSymbolLayerV2Widget.py::22: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSvgMarkerSymbolLayerV2Widget.py::23: Found QgsSvgMarkerSymbolLayerV2Widget -> ['==Renamed to== QgsSvgMarkerSymbolLayerWidget']
+./gui/qgis-sample-QgsSymbolsListWidget.py::3: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsSymbolsListWidget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSymbolsListWidget.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSymbolsListWidget.py::10: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsSymbolsListWidget.py::13: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsDualView.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsDualView.py::6: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsDualView.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGraduatedHistogramWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGraduatedHistogramWidget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGraduatedHistogramWidget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsColorRampComboBox.py::4: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsColorRampComboBox.py::5: Found QgsColorRampComboBox -> ['==Removed== was removed, replaced by QgsColorRampButton']
+./gui/qgis-sample-QgsColorRampComboBox.py::11: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsColorRampComboBox.py::13: Found QgsColorRampComboBox -> ['==Removed== was removed, replaced by QgsColorRampButton']
+./gui/qgis-sample-QgsMapTool.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTool.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTool.py::16: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTool.py::19: Found canvasReleaseEvent -> ['(class QgsAdvancedDigitizingDockWidget), canvasMoveEvent() were removed. Handling of events is done in QgsMapToolAdvancedDigitizing.']
+./gui/qgis-sample-QgsMapTool.py::20: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTool.py::25: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMapTool.py::29: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsLinePatternFillSymbolLayerWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsLinePatternFillSymbolLayerWidget.py::6: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsLinePatternFillSymbolLayerWidget.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsLinePatternFillSymbolLayerWidget.py::11: Found setMapCanvas -> ['(class QgsLayerPropertiesWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) and mapCanvas() have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsVariableEditorWidget.py::7: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsVariableEditorWidget.py::11: Found projectScope -> ['(class QgsExpressionContextUtils), setProjectVariable() and setProjectVariables() require pointer to QgsProject as the first argument.']
+./gui/qgis-sample-QgsAttributeTableModel.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeTableModel.py::10: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsAttributeTableModel.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py::3: Found QgsCategorizedSymbolRendererV2Widget -> ['==Renamed to== QgsCategorizedSymbolRendererWidget']
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py::7: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py::8: Found QgsCategorizedSymbolRendererV2Widget -> ['==Renamed to== QgsCategorizedSymbolRendererWidget']
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py::10: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py::11: Found rendererV2 -> ['==Renamed method to== renderer']
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py::14: Found setMapCanvas -> ['(class QgsLayerPropertiesWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) and mapCanvas() have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py::18: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py::22: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py::23: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsColorSwatchGrid.py::5: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::2: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::3: Found QgsGraduatedSymbolRendererV2Widget -> ['==Renamed to== QgsGraduatedSymbolRendererWidget']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::7: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::8: Found QgsGraduatedSymbolRendererV2Widget -> ['==Renamed to== QgsGraduatedSymbolRendererWidget']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::10: Found QgsStyleV2 -> ['==Renamed to== QgsStyle']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::14: Found setMapCanvas -> ['(class QgsLayerPropertiesWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) and mapCanvas() have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::18: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::22: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py::23: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsFeatureListView.py::13: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsFeatureListView.py::14: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsFeatureListView.py::16: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsScaleRangeWidget.py::5: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsScaleRangeWidget.py::8: Found setMapCanvas -> ['(class QgsLayerPropertiesWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) and mapCanvas() have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) and mapCanvas() have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsGeometryGeneratorSymbolLayerWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsGeometryGeneratorSymbolLayerWidget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsScaleComboBox.py::22: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsScaleWidget.py::22: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsVertexMarker.py::4: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsVertexMarker.py::7: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsVertexMarker.py::9: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsCentroidFillSymbolLayerV2Widget.py::2: Found QgsCentroidFillSymbolLayerV2Widget -> ['==Renamed to== QgsCentroidFillSymbolLayerWidget']
+./gui/qgis-sample-QgsCentroidFillSymbolLayerV2Widget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsCentroidFillSymbolLayerV2Widget.py::6: Found QgsCentroidFillSymbolLayerV2Widget -> ['==Renamed to== QgsCentroidFillSymbolLayerWidget']
+./gui/qgis-sample-QgsCentroidFillSymbolLayerV2Widget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsFormAnnotationItem.py::5: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsFormAnnotationItem.py::6: Found QgsFormAnnotationItem -> ['==Removed==  Use QgsFormAnnotation instead.']
+./gui/qgis-sample-QgsFormAnnotationItem.py::9: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsFormAnnotationItem.py::10: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsFormAnnotationItem.py::12: Found QgsFormAnnotationItem -> ['==Removed==  Use QgsFormAnnotation instead.']
+./gui/qgis-sample-QgsFormAnnotationItem.py::13: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsRasterLayerSaveAsDialog.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRasterLayerSaveAsDialog.py::7: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsRasterLayerSaveAsDialog.py::8: Found destinationCrs -> ['(class QgsGraphBuilderInterface) now returns a copy instead of a reference to the CRS. This has no effect on PyQGIS code, but c++', '(class QgsMapSettings) now returns a copy instead of a reference to the CRS. This has no effect on PyQGIS code, but c++', '(class QgsPointLocator) now returns a copy instead of a reference to the CRS. This has no effect on PyQGIS code, but c++']
+./gui/qgis-sample-QgsRasterLayerSaveAsDialog.py::10: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRasterLayerSaveAsDialog.py::11: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsRasterLayerSaveAsDialog.py::12: Found extent -> ['(class QgsMapLayer), styleURI(), exportNamedStyle(), exportSldStyle(), writeXml(), metadata() were made const. This has no effect on PyQGIS code, but c++ code implementing derived layer classes will need to update the signatures of these methods to match.']
+./gui/qgis-sample-QgsRasterLayerSaveAsDialog.py::13: Found crs -> ['(class QgsMapLayer) now returns a QgsCoordinateReferenceSystem object, not a reference. This change has no effect for PyQGIS code.']
+./gui/qgis-sample-QgsRasterLayerSaveAsDialog.py::25: Found mode -> ['(class QgsMapToolAdvancedDigitizing) and CaptureMode enum have been moved to QgsMapToolCapture subclass']
+./gui/qgis-sample-QgsMessageBar.py::18: Found select -> ['(class QgsVectorLayer) replaced by selectByRect()']
+./gui/qgis-sample-QgsMessageBar.py::27: Found showError -> ['(class QgsMapCanvas), useImageToRender() have been removed. They did nothing since 2.4.']
+./gui/qgis-sample-QgsMessageBar.py::33: Found showError -> ['(class QgsMapCanvas), useImageToRender() have been removed. They did nothing since 2.4.']
+./gui/qgis-sample-QgsMessageBar.py::34: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsMessageBar.py::47: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsMessageBar.py::50: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsMessageBar.py::51: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsMessageBar.py::66: Found layout -> ['(class QgsSvgSelectorDialog), buttonBox() has been removed as they were leaking implementation details.']
+./gui/qgis-sample-QgsUserInputDockWidget.py::4: Found QgsUserInputDockWidget -> ['==Renamed to== QgsUserInputWidget']
+./gui/qgis-sample-QgsUserInputDockWidget.py::11: Found QgsUserInputDockWidget -> ['==Renamed to== QgsUserInputWidget']
+./gui/qgis-sample-QgsMarkerLineSymbolLayerV2Widget.py::2: Found QgsMarkerLineSymbolLayerV2Widget -> ['==Renamed to== QgsMarkerLineSymbolLayerWidget']
+./gui/qgis-sample-QgsMarkerLineSymbolLayerV2Widget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMarkerLineSymbolLayerV2Widget.py::6: Found QgsMarkerLineSymbolLayerV2Widget -> ['==Renamed to== QgsMarkerLineSymbolLayerWidget']
+./gui/qgis-sample-QgsMarkerLineSymbolLayerV2Widget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeForm.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeForm.py::6: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsAttributeForm.py::7: Found setMode -> ['(class QgsMapToolAdvancedDigitizing) was replaced by setAdvancedDigitizingAllowed() and setAutoSnapEnabled()']
+./gui/qgis-sample-QgsColorSwatchGridAction.py::11: Found instance -> ['(class QgsAuthManager) was removed in favor of QgsApplication::authManager() that returns an instance of the Auth Manager']
+./gui/qgis-sample-QgsHtmlAnnotationItem.py::4: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsHtmlAnnotationItem.py::5: Found QgsHtmlAnnotationItem -> ['==Removed==  Use QgsHtmlAnnotation instead.']
+./gui/qgis-sample-QgsHtmlAnnotationItem.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsHtmlAnnotationItem.py::9: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsHtmlAnnotationItem.py::10: Found QgsHtmlAnnotationItem -> ['==Removed==  Use QgsHtmlAnnotation instead.']
+./gui/qgis-sample-QgsHtmlAnnotationItem.py::12: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsHtmlAnnotationItem.py::15: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsSingleBandPseudoColorRendererWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSingleBandPseudoColorRendererWidget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSvgAnnotationItem.py::7: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsSvgAnnotationItem.py::8: Found QgsSvgAnnotationItem -> ['==Removed==  Use QgsSvgAnnotation instead.']
+./gui/qgis-sample-QgsSvgAnnotationItem.py::11: Found mapCanvas -> ['(class QgsLayerPropertiesWidget) have been removed in favor of setContext()/context()', '(class QgsRendererWidget) have been removed in favor of setContext()/context()', '(class QgsRendererRulePropsWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolLayerWidget) have been removed in favor of setContext()/context()', '(class QgsSymbolSelectorDialog) have been removed in favor of setContext()/context()', '(class QgsSymbolsListWidget) have been removed in favor of setContext()/context()']
+./gui/qgis-sample-QgsSvgAnnotationItem.py::12: Found QgsSvgAnnotationItem -> ['==Removed==  Use QgsSvgAnnotation instead.']
+./gui/qgis-sample-QgsSvgAnnotationItem.py::14: Found QgsPoint -> ['==Renamed to== QgsPointXY']
+./gui/qgis-sample-QgsMultiBandColorRendererWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsMultiBandColorRendererWidget.py::7: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSingleBandGrayRendererWidget.py::5: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSingleBandGrayRendererWidget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSVGFillSymbolLayerWidget.py::8: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+./gui/qgis-sample-QgsSVGFillSymbolLayerWidget.py::25: Found layer -> ['(class QgsPalLabeling) was removed. If direct access to QgsPalLayerSettings is necessary, use QgsPalLayerSettings::fromLayer()']
+
+
+*******************************************************************************
+Found 537 API2 usages
+
+Files with API2 usages:
+./core/qgis-sample-QgsProject.py -> 1 usages found
+./core/qgis-sample-QgsJSONUtils.py -> 14 usages found
+./core/qgis-sample-QgsVectorLayerCache.py -> 1 usages found
+./core/qgis-sample-QgsMessageLog.py -> 1 usages found
+./core/qgis-sample-QgsVectorLayer.py -> 4 usages found
+./core/qgis-sample-QgsNetworkAccessManager.py -> 1 usages found
+./core/qgis-sample-QgsVectorLayerEditUtils.py -> 9 usages found
+./core/qgis-sample-QgsVectorFileWriter.py -> 13 usages found
+./gui/qgis-sample-QgsColorBox.py -> 1 usages found
+./gui/qgis-sample-QgsFontMarkerSymbolLayerV2Widget.py -> 3 usages found
+./gui/qgis-sample-QgsProjectionSelector.py -> 5 usages found
+./gui/qgis-sample-QgsAttributeTypeLoadDialog.py -> 2 usages found
+./gui/qgis-sample-QgsVectorColorBrewerColorRampV2Dialog.py -> 4 usages found
+./gui/qgis-sample-QgsRendererRulePropsDialog.py -> 7 usages found
+./gui/qgis-sample-QgsEllipseSymbolLayerV2Widget.py -> 3 usages found
+./gui/qgis-sample-CharacterWidget.py -> 6 usages found
+./gui/qgis-sample-QgsFieldComboBox.py -> 5 usages found
+./gui/qgis-sample-QgsAttributeTableView.py -> 3 usages found
+./gui/qgis-sample-QgsRuleBasedRendererV2Widget.py -> 12 usages found
+./gui/qgis-sample-QgsSmartGroupEditorDialog.py -> 3 usages found
+./gui/qgis-sample-QgsAuthSslErrorsDialog.py -> 1 usages found
+./gui/qgis-sample-QgsSvgSelectorWidget.py -> 7 usages found
+./gui/qgis-sample-QgsLayerPropertiesWidget.py -> 4 usages found
+./gui/qgis-sample-QgsComposerRuler.py -> 1 usages found
+./gui/qgis-sample-QgsColorDialogV2.py -> 2 usages found
+./gui/qgis-sample-QgsMapOverviewCanvas.py -> 8 usages found
+./gui/qgis-sample-QgsSimpleLineSymbolLayerV2Widget.py -> 4 usages found
+./gui/qgis-sample-QgsStyleV2ExportImportDialog.py -> 4 usages found
+./gui/qgis-sample-QgsEditorWidgetRegistry.py -> 8 usages found
+./gui/qgis-sample-QgsStyleV2GroupSelectionDialog.py -> 4 usages found
+./gui/qgis-sample-QgsRendererV2Widget.py -> 31 usages found
+./gui/qgis-sample-QgsMapToolZoom.py -> 1 usages found
+./gui/qgis-sample-QgsTextAnnotationItem.py -> 5 usages found
+./gui/qgis-sample-QgsOrderByDialog.py -> 4 usages found
+./gui/qgis-sample-QgsPointPatternFillSymbolLayerWidget.py -> 2 usages found
+./gui/qgis-sample-QgsManageConnectionsDialog.py -> 2 usages found
+./gui/qgis-sample-QgsMapTip.py -> 17 usages found
+./gui/qgis-sample-QgsMapToolPan.py -> 1 usages found
+./gui/qgis-sample-QgsQueryBuilder.py -> 9 usages found
+./gui/qgis-sample-QgsHistogramWidget.py -> 2 usages found
+./gui/qgis-sample-QgsMapLayerComboBox.py -> 5 usages found
+./gui/qgis-sample-QgsPalettedRendererWidget.py -> 2 usages found
+./gui/qgis-sample-QgsRubberBand.py -> 6 usages found
+./gui/qgis-sample-QgsStyleV2ManagerDialog.py -> 4 usages found
+./gui/qgis-sample-QgsLayerTreeView.py -> 1 usages found
+./gui/qgis-sample-QgsHighlight.py -> 11 usages found
+./gui/qgis-sample-QgsCptCityColorRampV2Dialog.py -> 4 usages found
+./gui/qgis-sample-QgsFileDropEdit.py -> 2 usages found
+./gui/qgis-sample-QgsExtentGroupBox.py -> 3 usages found
+./gui/qgis-sample-QgsColorSchemeModel.py -> 1 usages found
+./gui/qgis-sample-QgsVectorRandomColorRampV2Dialog.py -> 4 usages found
+./gui/qgis-sample-QgsEffectDrawModeComboBox.py -> 1 usages found
+./gui/qgis-sample-QgsSimpleFillSymbolLayerV2Widget.py -> 4 usages found
+./gui/qgis-sample-Qgs25DRendererWidget.py -> 9 usages found
+./gui/qgis-sample-QgsRendererV2PropertiesDialog.py -> 6 usages found
+./gui/qgis-sample-QgsSublayersDialog.py -> 12 usages found
+./gui/qgis-sample-QgsFeatureListModel.py -> 3 usages found
+./gui/qgis-sample-QgsEncodingFileDialog.py -> 1 usages found
+./gui/qgis-sample-QgsInvertedPolygonRendererWidget.py -> 5 usages found
+./gui/qgis-sample-QgsColorSchemeList.py -> 1 usages found
+./gui/qgis-sample-QgsMapCanvasSnappingUtils.py -> 2 usages found
+./gui/qgis-sample-QgsMapCanvas.py -> 6 usages found
+./gui/qgis-sample-QgsScaleVisibilityDialog.py -> 1 usages found
+./gui/qgis-sample-QgsColorButtonV2.py -> 2 usages found
+./gui/qgis-sample-QgsGenericProjectionSelector.py -> 2 usages found
+./gui/qgis-sample-QgsPointDisplacementRendererWidget.py -> 5 usages found
+./gui/qgis-sample-QgsVectorFieldSymbolLayerWidget.py -> 2 usages found
+./gui/qgis-sample-QgsExpressionBuilderDialog.py -> 2 usages found
+./gui/qgis-sample-QgsGeometryRubberBand.py -> 11 usages found
+./gui/qgis-sample-QgsSimpleMarkerSymbolLayerV2Widget.py -> 4 usages found
+./gui/qgis-sample-QgsAdvancedDigitizingDockWidget.py -> 2 usages found
+./gui/qgis-sample-QgsFieldConditionalFormatWidget.py -> 2 usages found
+./gui/qgis-sample-QgsMapUnitScaleDialog.py -> 1 usages found
+./gui/qgis-sample-QgsShapeburstFillSymbolLayerV2Widget.py -> 4 usages found
+./gui/qgis-sample-QgsDialog.py -> 3 usages found
+./gui/qgis-sample-QgsUnitSelectionWidget.py -> 2 usages found
+./gui/qgis-sample-QgsSingleSymbolRendererV2Widget.py -> 12 usages found
+./gui/qgis-sample-QgsGradientFillSymbolLayerV2Widget.py -> 4 usages found
+./gui/qgis-sample-QgsSizeScaleWidget.py -> 8 usages found
+./gui/qgis-sample-QgsHeatmapRendererWidget.py -> 5 usages found
+./gui/qgis-sample-QgsAttributeTableFilterModel.py -> 3 usages found
+./gui/qgis-sample-QgsAttributeForm3.py -> 2 usages found
+./gui/qgis-sample-QgsAttributeDialog.py -> 5 usages found
+./gui/qgis-sample-QgsSymbolV2SelectorDialog.py -> 7 usages found
+./gui/qgis-sample-QgsActionMenu.py -> 6 usages found
+./gui/qgis-sample-QgsSearchQueryBuilder.py -> 2 usages found
+./gui/qgis-sample-QgsVectorGradientColorRampV2Dialog.py -> 4 usages found
+./gui/qgis-sample-QgsExpressionSelectionDialog.py -> 2 usages found
+./gui/qgis-sample-QgsSvgMarkerSymbolLayerV2Widget.py -> 3 usages found
+./gui/qgis-sample-QgsSymbolsListWidget.py -> 5 usages found
+./gui/qgis-sample-QgsDualView.py -> 3 usages found
+./gui/qgis-sample-QgsGraduatedHistogramWidget.py -> 3 usages found
+./gui/qgis-sample-QgsColorRampComboBox.py -> 4 usages found
+./gui/qgis-sample-QgsMapTool.py -> 7 usages found
+./gui/qgis-sample-QgsLinePatternFillSymbolLayerWidget.py -> 4 usages found
+./gui/qgis-sample-QgsVariableEditorWidget.py -> 2 usages found
+./gui/qgis-sample-QgsAttributeTableModel.py -> 3 usages found
+./gui/qgis-sample-QgsCategorizedSymbolRendererV2Widget.py -> 11 usages found
+./gui/qgis-sample-QgsColorSwatchGrid.py -> 1 usages found
+./gui/qgis-sample-QgsGraduatedSymbolRendererV2Widget.py -> 12 usages found
+./gui/qgis-sample-QgsFeatureListView.py -> 3 usages found
+./gui/qgis-sample-QgsScaleRangeWidget.py -> 2 usages found
+./gui/qgis-sample-QgsGeometryGeneratorSymbolLayerWidget.py -> 2 usages found
+./gui/qgis-sample-QgsScaleComboBox.py -> 1 usages found
+./gui/qgis-sample-QgsScaleWidget.py -> 1 usages found
+./gui/qgis-sample-QgsVertexMarker.py -> 3 usages found
+./gui/qgis-sample-QgsCentroidFillSymbolLayerV2Widget.py -> 4 usages found
+./gui/qgis-sample-QgsFormAnnotationItem.py -> 6 usages found
+./gui/qgis-sample-QgsRasterLayerSaveAsDialog.py -> 8 usages found
+./gui/qgis-sample-QgsMessageBar.py -> 8 usages found
+./gui/qgis-sample-QgsUserInputDockWidget.py -> 2 usages found
+./gui/qgis-sample-QgsMarkerLineSymbolLayerV2Widget.py -> 4 usages found
+./gui/qgis-sample-QgsAttributeForm.py -> 3 usages found
+./gui/qgis-sample-QgsColorSwatchGridAction.py -> 1 usages found
+./gui/qgis-sample-QgsHtmlAnnotationItem.py -> 7 usages found
+./gui/qgis-sample-QgsSingleBandPseudoColorRendererWidget.py -> 2 usages found
+./gui/qgis-sample-QgsSvgAnnotationItem.py -> 5 usages found
+./gui/qgis-sample-QgsMultiBandColorRendererWidget.py -> 2 usages found
+./gui/qgis-sample-QgsSingleBandGrayRendererWidget.py -> 2 usages found
+./gui/qgis-sample-QgsSVGFillSymbolLayerWidget.py -> 2 usages found
+
+
+###############################################################################
+NOTE:
+This tool is based on a machine parsing of 
+https://qgis.org/api/api_break.html so the result are as good as the 
+information there. Also, being a simple parser, it just give an hint were to
+look at. It is by no means a complete tool to find all the
+possible API incompatibility.
+
+Methods are matched just based on their names and not on their classes, 
+so there might be various false positives.
+

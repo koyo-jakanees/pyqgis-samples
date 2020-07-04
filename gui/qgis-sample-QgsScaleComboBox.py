@@ -1,5 +1,7 @@
+from __future__ import print_function
+from builtins import range
 # coding: utf-8
-from PyQt4.QtGui import QDialog
+from qgis.PyQt.QtWidgets import QDialog
 from qgis.gui import QgsScaleComboBox
 from qgis.utils import iface
 
@@ -10,10 +12,12 @@ scale_box = QgsScaleComboBox(new_dialog)
 
 
 def on_scale_changed():
-    print(scale_box.scale(),
-          QgsScaleComboBox.toString(scale_box.scale()))
-    print(scale_box.scaleString(),
-          QgsScaleComboBox.toDouble(scale_box.scaleString()))
+    # fix_print_with_import
+    print((scale_box.scale(),
+          QgsScaleComboBox.toString(scale_box.scale())))
+    # fix_print_with_import
+    print((scale_box.scaleString(),
+          QgsScaleComboBox.toDouble(scale_box.scaleString())))
     print("Scale changed")
     iface.mapCanvas().zoomScale(1 / scale_box.scale())
 

@@ -1,6 +1,7 @@
 # coding:utf-8
-from PyQt4.QtCore import QUrl
-from PyQt4.QtNetwork import QNetworkRequest
+from __future__ import print_function
+from qgis.PyQt.QtCore import QUrl
+from qgis.PyQt.QtNetwork import QNetworkRequest
 from qgis.core import QgsNetworkAccessManager
 
 url = 'http://qgis.org/en/site/'

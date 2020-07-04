@@ -1,3 +1,5 @@
+from __future__ import print_function
+from builtins import str
 # coding: utf-8
 from qgis.gui import QgsOrderByDialog
 from qgis.utils import iface

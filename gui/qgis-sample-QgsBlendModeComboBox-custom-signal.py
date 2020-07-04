@@ -1,6 +1,7 @@
+from __future__ import print_function
 # Make your own signal
-from PyQt4.QtCore import pyqtSignal
-from PyQt4.QtGui import QDialog
+from qgis.PyQt.QtCore import pyqtSignal
+from qgis.PyQt.QtWidgets import QDialog
 from qgis.gui import QgsBlendModeComboBox
 
 new_dialog = QDialog()
@@ -59,7 +60,8 @@ enum_composition_mode = [
 
 def print_blend_mode(index):
     # See enum QPainter.CompositionMode for correspondance
-    print enum_composition_mode[index]
+    # fix_print_with_import
+    print(enum_composition_mode[index])
 
 # Custom signal from QgsBlendModeComboBoxWithCustomSignal
 blend_mode_combo_box.onBlendChanged.connect(print_blend_mode)

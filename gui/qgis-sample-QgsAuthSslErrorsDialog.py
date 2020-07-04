@@ -1,6 +1,6 @@
 # coding: utf-8
-from PyQt4.QtCore import QUrl
-from PyQt4.QtNetwork import QNetworkRequest, QSslError
+from qgis.PyQt.QtCore import QUrl
+from qgis.PyQt.QtNetwork import QNetworkRequest
 from qgis.core import QgsNetworkAccessManager
 from qgis.gui import QgsAuthSslErrorsDialog
 

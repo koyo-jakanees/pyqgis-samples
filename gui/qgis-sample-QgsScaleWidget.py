@@ -1,5 +1,6 @@
 # coding: utf-8
-from PyQt4.QtGui import QDialog
+from __future__ import print_function
+from qgis.PyQt.QtWidgets import QDialog
 from qgis.gui import QgsScaleWidget
 from qgis.utils import iface
 
@@ -10,10 +11,12 @@ scale_widget = QgsScaleWidget(new_dialog)
 
 
 def on_scale_changed():
-    print(scale_widget.scale(),
-          QgsScaleWidget.toString(scale_widget.scale()))
-    print(scale_widget.scaleString(),
-          QgsScaleWidget.toDouble(scale_widget.scaleString()))
+    # fix_print_with_import
+    print((scale_widget.scale(),
+          QgsScaleWidget.toString(scale_widget.scale())))
+    # fix_print_with_import
+    print((scale_widget.scaleString(),
+          QgsScaleWidget.toDouble(scale_widget.scaleString())))
     print(scale_widget.showCurrentScaleButton())
     print("Scale changed")
     iface.mapCanvas().zoomScale(1 / scale_widget.scale())

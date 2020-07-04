@@ -1,5 +1,6 @@
 # coding: utf-8
-from PyQt4.QtGui import QDialog
+from __future__ import print_function
+from qgis.PyQt.QtWidgets import QDialog
 from qgis.gui import QgsBlendModeComboBox
 
 new_dialog = QDialog()
@@ -46,8 +47,10 @@ enum_composition_mode = [
 
 def on_blend_mode_changed(index):
     # See enum QPainter.CompositionMode for correspondance
-    print blend_mode_combo_box.blendMode()
-    print 'Qpainter.' + enum_composition_mode[blend_mode_combo_box.blendMode()]
+    # fix_print_with_import
+    print(blend_mode_combo_box.blendMode())
+    # fix_print_with_import
+    print('Qpainter.' + enum_composition_mode[blend_mode_combo_box.blendMode()])
 
 # Signal inherited from QComboBox
 blend_mode_combo_box.currentIndexChanged.connect(on_blend_mode_changed)

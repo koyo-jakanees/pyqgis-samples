@@ -1,16 +1,23 @@
 # coding: utf-8
+from __future__ import print_function
 from qgis.gui import QgsEditorWidgetRegistry
 from qgis.utils import iface
 
 editor_widget_registry_instance = QgsEditorWidgetRegistry.instance()
 
-# List available widgets in Text edition in tab Fields of a vector layer
-print editor_widget_registry_instance.factories()  # Return a list of QgsEditorWidgetFactory
-print editor_widget_registry_instance.factories().keys()
+# List available widgets in Text edition in tab Fields of a vector layer# fix_print_with_import
 
-# Get QgsEditorWidgetFactory
-print editor_widget_registry_instance.factory(u'Range')
-print editor_widget_registry_instance.factory(u'RelationReference')
+# fix_print_with_import
+print(editor_widget_registry_instance.factories())  # Return a list of QgsEditorWidgetFactory
+# fix_print_with_import
+print(list(editor_widget_registry_instance.factories().keys()))
+
+# Get QgsEditorWidgetFactory# fix_print_with_import
+
+# fix_print_with_import
+print(editor_widget_registry_instance.factory(u'Range'))
+# fix_print_with_import
+print(editor_widget_registry_instance.factory(u'RelationReference'))
 
 
 layer = iface.activeLayer()

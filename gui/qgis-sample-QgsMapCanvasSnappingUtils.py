@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from __future__ import print_function
 from qgis.core import QgsSnappingUtils
 from qgis.gui import QgsMapCanvasSnappingUtils
 from qgis.utils import iface

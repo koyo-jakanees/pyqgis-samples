@@ -1,5 +1,6 @@
 # coding: utf-8
-from PyQt4.QtGui import QDialog, QFormLayout
+from __future__ import print_function
+from qgis.PyQt.QtWidgets import QDialog, QFormLayout
 from qgis.gui import (QgsFieldComboBox, QgsMapLayerComboBox,
                       QgsMapLayerProxyModel)
 

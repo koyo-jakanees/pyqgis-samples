@@ -1,5 +1,5 @@
 # coding: utf-8
-from PyQt4.QtGui import QMenu
+from qgis.PyQt.QtWidgets import QMenu
 from qgis.core import QgsStyleV2
 from qgis.gui import QgsSymbolsListWidget
 from qgis.utils import iface

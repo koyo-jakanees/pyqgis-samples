@@ -1,5 +1,5 @@
 # coding: utf-8
-from PyQt4.QtGui import QColor
+from qgis.PyQt.QtGui import QColor
 from qgis.core import QgsGeometry, QgsPoint
 from qgis.gui import QgsRubberBand
 from qgis.utils import iface

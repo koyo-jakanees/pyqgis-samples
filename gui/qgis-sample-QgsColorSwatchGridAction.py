@@ -1,5 +1,5 @@
 # coding: utf-8
-from PyQt4.QtGui import QDialog, QMenu, QMenuBar, QVBoxLayout
+from qgis.PyQt.QtWidgets import QDialog, QMenu, QMenuBar, QVBoxLayout
 from qgis.core import QgsColorSchemeRegistry, QgsCustomColorScheme
 from qgis.gui import QgsColorSwatchGridAction
 

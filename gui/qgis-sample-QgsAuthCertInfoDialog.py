@@ -1,7 +1,10 @@
 # coding: utf-8
-import urllib
-from PyQt4.QtCore import QByteArray
-from PyQt4.QtNetwork import QSslCertificate
+from __future__ import print_function
+from future import standard_library
+standard_library.install_aliases()
+import urllib.request, urllib.parse, urllib.error
+from qgis.PyQt.QtCore import QByteArray
+from qgis.PyQt.QtNetwork import QSslCertificate
 from qgis.gui import QgsAuthCertInfoDialog
 
 # Certificate for test from http://fm4dd.com/openssl/certexamples.htm
@@ -11,7 +14,7 @@ remote_url = 'http://fm4dd.com/openssl/source/PEM/certs/1024b-rsa-example-cert.p
 pem_path = remote_url.split('/')[-1]
 # Fetch certificate from remote url and write to file
 with open(pem_path, 'wb') as f:
-    certificate_string = urllib.urlopen(remote_url).read()
+    certificate_string = urllib.request.urlopen(remote_url).read()
     f.write(certificate_string)
 
 # Instanciate a first QgsAuthCertInfoDialog using QSslCertificate.fromPath

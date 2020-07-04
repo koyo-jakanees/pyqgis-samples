@@ -1,5 +1,5 @@
 # coding: utf-8
-from PyQt4.QtCore import Qt
+from qgis.PyQt.QtCore import Qt
 from qgis.gui import QgsCharacterSelectorDialog
 from qgis.utils import iface
 

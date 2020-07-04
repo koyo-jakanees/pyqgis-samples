@@ -1,5 +1,5 @@
 # coding: utf-8
-from PyQt4.QtGui import QDialog, QVBoxLayout
+from qgis.PyQt.QtWidgets import QDialog, QVBoxLayout
 from qgis.gui import QgsColorButtonV2
 
 # Create dialog and widget

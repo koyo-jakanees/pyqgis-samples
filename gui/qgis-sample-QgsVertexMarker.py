@@ -1,5 +1,5 @@
 # coding: utf-8
-from PyQt4.QtGui import QColor
+from qgis.PyQt.QtGui import QColor
 from qgis.utils import iface
 from qgis.core import QgsPoint
 from qgis.gui import QgsVertexMarker

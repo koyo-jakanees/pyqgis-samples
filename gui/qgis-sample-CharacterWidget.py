@@ -1,5 +1,6 @@
 # coding: utf-8
-from PyQt4.QtGui import QFont
+from __future__ import print_function
+from qgis.PyQt.QtGui import QFont
 from qgis.gui import CharacterWidget
 
 character_widget = CharacterWidget()

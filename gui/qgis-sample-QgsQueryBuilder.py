@@ -1,5 +1,5 @@
 # coding: utf-8
-from PyQt4.QtCore import QVariant
+from qgis.PyQt.QtCore import QVariant
 from qgis.gui import QgsQueryBuilder
 from qgis.core import (QgsFeature,
                        QgsField, QgsGeometry,

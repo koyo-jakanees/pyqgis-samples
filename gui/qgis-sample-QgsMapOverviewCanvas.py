@@ -1,6 +1,7 @@
 # coding: utf-8
-from PyQt4.QtCore import Qt, QObject
-from PyQt4.QtGui import QColor, QVBoxLayout, QDockWidget
+from qgis.PyQt.QtCore import Qt, QObject
+from qgis.PyQt.QtGui import QColor
+from qgis.PyQt.QtWidgets import QVBoxLayout, QDockWidget
 from qgis.gui import QgsMapOverviewCanvas
 from qgis.utils import iface
 

@@ -1,7 +1,7 @@
 # coding: utf-8
 from inspect import getsourcefile
 import os
-from PyQt4.QtCore import QPointF, QSizeF
+from qgis.PyQt.QtCore import QPointF, QSizeF
 from qgis.core import QgsPoint
 from qgis.gui import QgsFormAnnotationItem
 from qgis.utils import iface

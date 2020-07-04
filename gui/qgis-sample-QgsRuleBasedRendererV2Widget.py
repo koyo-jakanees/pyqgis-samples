@@ -1,5 +1,6 @@
 # coding:utf-8
-from PyQt4.QtGui import QTreeView
+from __future__ import print_function
+from qgis.PyQt.QtWidgets import QTreeView
 from qgis.core import QgsStyleV2
 from qgis.gui import QgsRuleBasedRendererV2Widget
 from qgis.utils import iface
