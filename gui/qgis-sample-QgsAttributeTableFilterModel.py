@@ -1,5 +1,6 @@
 # coding: utf-8
-from qgis.PyQt.QtWidgets import QTableView
+from qgis.PyQt.QtWidgets import QTableView #QGIS3 recommended API
+# from PyQt5.QtWidgets import QTableView #also works fine
 from qgis.core import QgsVectorLayerCache
 from qgis.gui import (QgsAttributeTableModel,
                       QgsAttributeTableView,
