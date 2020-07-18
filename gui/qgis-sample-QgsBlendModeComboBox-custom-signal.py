@@ -1,4 +1,5 @@
 from __future__ import print_function
+
 # Make your own signal
 from qgis.PyQt.QtCore import pyqtSignal
 from qgis.PyQt.QtWidgets import QDialog
@@ -13,48 +14,49 @@ class QgsBlendModeComboBoxWithCustomSignal(QgsBlendModeComboBox):
 
     def __init__(self, parent=None):
         # Initialize the QgsBlendModeComboBoxWithCustomSignal as a QgsBlendModeComboBox
-        super(QgsBlendModeComboBoxWithCustomSignal, self).__init__(parent)
+        super().__init__(parent)
         self.currentIndexChanged.connect(self._onBlendChanged)
 
     def _onBlendChanged(self):
         self.onBlendChanged.emit(self.blendMode())
 
+
 blend_mode_combo_box = QgsBlendModeComboBoxWithCustomSignal(new_dialog)
 
 enum_composition_mode = [
-    'CompositionMode_SourceOver',
-    'CompositionMode_DestinationOver',
-    'CompositionMode_Clear',
-    'CompositionMode_Source',
-    'CompositionMode_Destination',
-    'CompositionMode_SourceIn',
-    'CompositionMode_DestinationIn',
-    'CompositionMode_SourceOut',
-    'CompositionMode_DestinationOut',
-    'CompositionMode_SourceAtop',
-    'CompositionMode_DestinationAtop',
-    'CompositionMode_Xor',
-    'CompositionMode_Plus',
-    'CompositionMode_Multiply',
-    'CompositionMode_Screen',
-    'CompositionMode_Overlay',
-    'CompositionMode_Darken',
-    'CompositionMode_Lighten',
-    'CompositionMode_ColorDodge',
-    'CompositionMode_ColorBurn',
-    'CompositionMode_HardLight',
-    'CompositionMode_SoftLight',
-    'CompositionMode_Difference',
-    'CompositionMode_Exclusion',
-    'RasterOp_SourceOrDestination',
-    'RasterOp_SourceAndDestination',
-    'RasterOp_SourceXorDestination',
-    'RasterOp_NotSourceAndNotDestination',
-    'RasterOp_NotSourceOrNotDestination',
-    'RasterOp_NotSourceXorDestination',
-    'RasterOp_NotSource',
-    'RasterOp_NotSourceAndDestination',
-    'RasterOp_SourceAndNotDestination'
+    "CompositionMode_SourceOver",
+    "CompositionMode_DestinationOver",
+    "CompositionMode_Clear",
+    "CompositionMode_Source",
+    "CompositionMode_Destination",
+    "CompositionMode_SourceIn",
+    "CompositionMode_DestinationIn",
+    "CompositionMode_SourceOut",
+    "CompositionMode_DestinationOut",
+    "CompositionMode_SourceAtop",
+    "CompositionMode_DestinationAtop",
+    "CompositionMode_Xor",
+    "CompositionMode_Plus",
+    "CompositionMode_Multiply",
+    "CompositionMode_Screen",
+    "CompositionMode_Overlay",
+    "CompositionMode_Darken",
+    "CompositionMode_Lighten",
+    "CompositionMode_ColorDodge",
+    "CompositionMode_ColorBurn",
+    "CompositionMode_HardLight",
+    "CompositionMode_SoftLight",
+    "CompositionMode_Difference",
+    "CompositionMode_Exclusion",
+    "RasterOp_SourceOrDestination",
+    "RasterOp_SourceAndDestination",
+    "RasterOp_SourceXorDestination",
+    "RasterOp_NotSourceAndNotDestination",
+    "RasterOp_NotSourceOrNotDestination",
+    "RasterOp_NotSourceXorDestination",
+    "RasterOp_NotSource",
+    "RasterOp_NotSourceAndDestination",
+    "RasterOp_SourceAndNotDestination",
 ]
 
 
@@ -63,7 +65,9 @@ def print_blend_mode(index):
     # fix_print_with_import
     print(enum_composition_mode[index])
 
+
 # Custom signal from QgsBlendModeComboBoxWithCustomSignal
 blend_mode_combo_box.onBlendChanged.connect(print_blend_mode)
 
 new_dialog.show()
+
