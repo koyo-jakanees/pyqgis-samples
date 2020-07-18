@@ -1,25 +1,27 @@
 # coding:utf-8
-from qgis.core import QgsStyleV2
-from qgis.gui import QgsCategorizedSymbolRendererV2Widget
+from qgis.core import QgsStyle
+from qgis.gui import QgsCategorizedSymbolRendererWidget
 from qgis.utils import iface
 
 layer = iface.activeLayer()
 canvas = iface.mapCanvas()
-categorized_symbol_renderer_v2_widget = QgsCategorizedSymbolRendererV2Widget(
+categorized_symbol_renderer_v2_widget = QgsCategorizedSymbolRendererWidget(
     iface.activeLayer(),
     QgsStyleV2.defaultStyle(),
     iface.activeLayer().rendererV2()
 )
 
-categorized_symbol_renderer_v2_widget.setMapCanvas(canvas)
-
-
+# categorized_symbol_renderer_v2_widget.setMapCanvas(canvas)
+# QgsCategorizedSymbolRendererWidget(*args) does not have 
+# '.setMapCanvas(canvas)' in api V3
+ 
 def on_widget_changed():
-    layer.setRendererV2(
+    layer.setRenderer(
         categorized_symbol_renderer_v2_widget.renderer()
     )
     if canvas.isCachingEnabled():
-        layer.setCacheImage(None)
+        # layer.setCacheImage(None)
+        # QgsVectorLayer does'nt have above attribute in v3
         layer.triggerRepaint()
     else:
         canvas.refresh()
