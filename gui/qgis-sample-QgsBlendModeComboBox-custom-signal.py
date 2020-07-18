@@ -13,7 +13,7 @@ class QgsBlendModeComboBoxWithCustomSignal(QgsBlendModeComboBox):
 
     def __init__(self, parent=None):
         # Initialize the QgsBlendModeComboBoxWithCustomSignal as a QgsBlendModeComboBox
-        QgsBlendModeComboBox.__init__(self, parent)
+        super(QgsBlendModeComboBoxWithCustomSignal, self).__init__(parent)
         self.currentIndexChanged.connect(self._onBlendChanged)
 
     def _onBlendChanged(self):
