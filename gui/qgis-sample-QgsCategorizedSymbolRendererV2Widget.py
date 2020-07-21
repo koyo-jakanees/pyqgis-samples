@@ -11,6 +11,7 @@ categorized_symbol_renderer_v2_widget = QgsCategorizedSymbolRendererWidget(
     iface.activeLayer().rendererV2()
 )
 
+# TODO: inspect why qgis crashes
 # categorized_symbol_renderer_v2_widget.setMapCanvas(canvas)
 # QgsCategorizedSymbolRendererWidget(*args) does not have 
 # '.setMapCanvas(canvas)' in api V3
