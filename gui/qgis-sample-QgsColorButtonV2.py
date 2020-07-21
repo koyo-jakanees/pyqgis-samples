@@ -1,11 +1,11 @@
 # coding: utf-8
 from qgis.PyQt.QtWidgets import QDialog, QVBoxLayout
-from qgis.gui import QgsColorButtonV2
+from qgis.gui import QgsColorButton
 
 # Create dialog and widget
 d = QDialog()
 # Create the color button
-btn = QgsColorButtonV2()
+btn = QgsColorButton()
 
 # Create layout and add the button as a widget to it
 vbox = QVBoxLayout()
