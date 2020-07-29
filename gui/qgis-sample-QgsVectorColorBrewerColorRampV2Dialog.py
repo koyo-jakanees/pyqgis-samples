@@ -1,9 +1,9 @@
 # coding: utf-8
-from qgis.core import QgsVectorColorBrewerColorRampV2
-from qgis.gui import QgsVectorColorBrewerColorRampV2Dialog
+from qgis.core import QgsColorBrewerColorRamp
+from qgis.gui import QgsColorBrewerColorRampDialog
 
-vector_color_brewer_color_ramp_v2_dialog = QgsVectorColorBrewerColorRampV2Dialog(
-    QgsVectorColorBrewerColorRampV2()
+color_brewer_color_ramp_dialog = QgsColorBrewerColorRampDialog(
+    QgsColorBrewerColorRamp()
 )
 
-vector_color_brewer_color_ramp_v2_dialog.show()
+color_brewer_color_ramp_dialog.show()
