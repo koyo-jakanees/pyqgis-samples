@@ -1,23 +1,23 @@
 # coding:utf-8
 from __future__ import print_function
 from qgis.PyQt.QtWidgets import QTreeView
-from qgis.core import QgsStyleV2
-from qgis.gui import QgsRuleBasedRendererV2Widget
+from qgis.core import QgsStyle
+from qgis.gui import QgsRuleBasedRendererWidget
 from qgis.utils import iface
 
 layer = iface.activeLayer()
 canvas = iface.mapCanvas()
-rule_based_renderer_v2_widget = QgsRuleBasedRendererV2Widget(
+rule_based_renderer_v2_widget = QgsRuleBasedRendererWidget(
     layer,
-    QgsStyleV2.defaultStyle(),
-    layer.rendererV2()
+    QgsStyle.defaultStyle(),
+    layer.renderer()
 )
 
-rule_based_renderer_v2_widget.setMapCanvas(canvas)
-
+rule_based_renderer_v2_widget.context()
+# https://qgis.org/api/api_break.html
 
 def on_widget_changed():
-    layer.setRendererV2(
+    layer.setRenderer(
         rule_based_renderer_v2_widget.renderer()
     )
     if canvas.isCachingEnabled():
@@ -34,6 +34,6 @@ print(
         QTreeView,
         "viewRules"
     )[0].model()
-)  # Issue: it returns a PyQt4.QtCore.QAbstractItemModel whereas it should
+)  # Issue: it returns a PyQt5.QtCore.QAbstractItemModel whereas it should
 # return a QgsRuleBasedRendererV2Model according to code e.g
 # https://qgis.org/api/qgsrulebasedrendererv2widget_8cpp_source.html#l00068
