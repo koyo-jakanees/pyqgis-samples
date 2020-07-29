@@ -1,8 +1,8 @@
 # coding: utf-8
-from qgis.core import QgsVectorGradientColorRampV2
-from qgis.gui import QgsVectorGradientColorRampV2Dialog
+from qgis.core import QgsGradientColorRamp
+from qgis.gui import QgsGradientColorRampDialog
 
-vector_gradient_color_ramp_v2_dialog = QgsVectorGradientColorRampV2Dialog(
-    QgsVectorGradientColorRampV2()
+gradient_color_ramp_dialog = QgsGradientColorRampDialog(
+    QgsGradientColorRamp()
 )
-vector_gradient_color_ramp_v2_dialog.show()
+gradient_color_ramp_dialog.show()
